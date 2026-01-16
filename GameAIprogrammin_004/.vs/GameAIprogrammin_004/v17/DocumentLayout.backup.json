@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\squares.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:squares.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\squares.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:squares.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\mapReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:mapReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\mapReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:mapReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "map.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp",
+              "RelativeDocumentMoniker": "map.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp",
+              "RelativeToolTip": "map.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-15T23:27:48.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "objects.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.h",
+              "RelativeDocumentMoniker": "objects.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.h",
+              "RelativeToolTip": "objects.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-15T17:19:02.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "squares.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\squares.h",
+              "RelativeDocumentMoniker": "squares.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\squares.h",
+              "RelativeToolTip": "squares.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-14T13:50:24.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "squares.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\squares.cpp",
+              "RelativeDocumentMoniker": "squares.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\squares.cpp",
+              "RelativeToolTip": "squares.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-14T16:36:06.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mapReader.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\mapReader.h",
+              "RelativeDocumentMoniker": "mapReader.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\mapReader.h",
+              "RelativeToolTip": "mapReader.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-13T18:09:10.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mapReader.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\mapReader.cpp",
+              "RelativeDocumentMoniker": "mapReader.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\mapReader.cpp",
+              "RelativeToolTip": "mapReader.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-13T19:12:14.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-10T10:36:23.652Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

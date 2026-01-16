@@ -1,0 +1,19 @@
+#pragma once
+#include "raylib.h"
+#include "raymath.h"
+
+class Wall
+{
+private:
+	Vector2 positionS;
+	Vector2 positionE;
+	Vector2 angle;
+public:
+	Wall();
+	Wall(float width, float height, float margin);
+	Wall(Vector2 position, Vector2 wallAngle) : positionS(position), angle(wallAngle), positionE(positionS + wallAngle) {};
+	void Draw(Color color);
+	Vector2 GetStart();
+	Vector2 GetEnd();
+	Vector2 GetVector();
+};
