@@ -1,13 +1,12 @@
 #include "raylib.h"
-#include "colors.h"
-#include "mapReader.h"
-
+#include "globals.h"
+#include "map.h"
 
 int main()
 {
     //Window size
-    float width = 1200;
-    float height = 1200;
+    float width = 1000 * resMult;
+    float height = 1000 * resMult;
     float margin = 0;
 
     // Create Window and set FPS
@@ -18,7 +17,7 @@ int main()
 
 
     // Create Map
-
+    Map newMap;
     // Create Workers
     // Create Objects
 
@@ -32,10 +31,10 @@ int main()
 
         // Drawing
         BeginDrawing();
-        ClearBackground(black);
+        ClearBackground(Mblack);
 
         // Draw Stuff
-
+        newMap.Draw();
         
 
         EndDrawing();

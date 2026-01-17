@@ -130,10 +130,11 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapReader.cpp" />
+    <ClCompile Include="objects.cpp" />
     <ClCompile Include="squares.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="colors.h" />
+    <ClInclude Include="globals.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="mapReader.h" />
     <ClInclude Include="objects.h" />
