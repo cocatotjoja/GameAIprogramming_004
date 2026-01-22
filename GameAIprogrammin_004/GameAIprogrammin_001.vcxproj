@@ -139,6 +139,7 @@
     <ClInclude Include="mapReader.h" />
     <ClInclude Include="objects.h" />
     <ClInclude Include="squares.h" />
+    <ClInclude Include="worker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

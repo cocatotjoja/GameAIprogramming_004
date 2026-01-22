@@ -1,21 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (GameAIpr.28b59abf\x64\Debug\) contains files shared from another project (GameAIprogrammin_001.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  main.cpp
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\squares.h(15,66): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\squares.h(15,88): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.h(14,36): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.h(25,35): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'main.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\main.cpp(8,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\main.cpp(9,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\main.cpp(13,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\main.cpp(13,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   map.cpp
 C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\squares.h(15,66): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
   (compiling source file 'map.cpp')
@@ -29,30 +12,12 @@ C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objec
 C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.h(25,35): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
   (compiling source file 'map.cpp')
   
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(31,22): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(31,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(31,30): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(31,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  objects.cpp
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.h(14,36): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'objects.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.h(25,35): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'objects.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(5,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(5,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(5,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(11,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(11,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(11,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  squares.cpp
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\squares.h(15,66): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'squares.cpp')
-  
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\squares.h(15,88): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-  (compiling source file 'squares.cpp')
-  
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(35,22): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(35,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(35,30): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(35,30): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(56,65): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(56,65): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(56,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(56,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   GameAIprogrammin_001.vcxproj -> C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\x64\Debug\GameAIprogrammin_004.exe

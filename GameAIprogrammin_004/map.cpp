@@ -49,6 +49,8 @@ void Map::MakeMap()
 			{
 				// Add boundingbox for lower speed
 				type = MdarkBrown;
+				Rectangle boundary = { pos.x * resMult, pos.y * resMult, 10 * resMult, 10 * resMult };
+				swamps.push_back(boundary);
 			}
 			else if (def == 'B')
 			{

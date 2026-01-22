@@ -2,6 +2,24 @@
 #include <random>
 #include "raylib.h"
 
+
+enum States
+{
+	CHOPWOOD,
+	MINEORE,
+	TRANSPORT,
+	IDLE
+
+};
+
+enum Target
+{
+	FOG,
+	WOOD,
+	ORE,
+
+};
+
 // Resolution Multiplier
 static int resMult = 2;
 
