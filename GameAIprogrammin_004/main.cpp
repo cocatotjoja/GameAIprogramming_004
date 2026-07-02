@@ -1,6 +1,7 @@
 #include "raylib.h"
 #include "globals.h"
 #include "map.h"
+#include "StaffManager.h"
 
 int main()
 {
@@ -19,8 +20,7 @@ int main()
     // Create Map
     Map newMap;
     // Create Workers
-    // Create Objects
-
+    //StaffManager staff;
 
 
     //Game Loop

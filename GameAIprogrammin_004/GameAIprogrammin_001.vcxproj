@@ -127,18 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="branch.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapReader.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="objects.cpp" />
-    <ClCompile Include="squares.cpp" />
+    <ClCompile Include="Pathfinder.cpp" />
+    <ClCompile Include="StaffManager.cpp" />
+    <ClCompile Include="worker.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="branch.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="mapReader.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="objects.h" />
-    <ClInclude Include="squares.h" />
+    <ClInclude Include="Pathfinder.h" />
+    <ClInclude Include="StaffManager.h" />
     <ClInclude Include="worker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

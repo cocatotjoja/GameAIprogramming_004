@@ -1,9 +1,9 @@
 #pragma once
 #include <vector>
+#include <stack>
 #include "raylib.h"
 #include "raymath.h"
 
-#include "squares.h"
 #include "objects.h"
 #include "globals.h"
 #include "mapReader.h"
@@ -15,15 +15,15 @@ class Map
 	MapReader rm;
 	vector<Tree> trees;
 	vector<Ore> ironOre;
-	vector<Terrain> land;
 	vector<Rectangle> swamps;
+	vector<Workshop> workshops;
 	
 public:
 	Map();
 	void Draw();
 	void MakeMap();
-	//void AddTree(Vector2 pos);
+	void AddTree(Vector2 pos);
 	void AddOre();
 
-	bool IsBlocked(int x, int y);
+	Workshop* GetWorkshop(WorkshopType type);
 };

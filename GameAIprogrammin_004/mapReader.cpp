@@ -7,6 +7,6 @@ MapReader::MapReader()
 		int x = i % 100;
 		int y = i / 100;
 
-		mapGrid[x][y] = charMap[i];
+		mapGrid[x][y] = Node(x, y, charMap[i]);
 	}
 }

@@ -5,19 +5,44 @@
 
 enum States
 {
-	CHOPWOOD,
-	MINEORE,
+	HARVEST,
 	TRANSPORT,
+	CRAFTING,
+	SCOUT,
 	IDLE
-
 };
 
-enum Target
+enum Product
 {
-	FOG,
 	WOOD,
 	ORE,
+	COAL,
+	BAR,
+	SWORD
+};
 
+enum WorkshopType
+{
+	COAL_MILL,
+	SMELT,
+	FORGE,
+	TRAINING_CAMP
+};
+
+enum WorkshopState
+{
+	WAITING,
+	RUNNING,
+	AVAILABLE,
+	NOT_BUILT
+};
+
+enum CrafterType
+{
+	MINER,
+	SMITH,
+	SMELTER,
+	BUILDER
 };
 
 // Resolution Multiplier
@@ -41,4 +66,12 @@ inline int RandomIntRange(int min, int max)
 	static std::mt19937 gen(rd());
 	std::uniform_int_distribution<> dist(min, max);
 	return dist(gen);
+}
+
+inline Vector2 GetNearestNode(Vector2 currentPos)
+{
+	int x = (int)currentPos.x - (int)currentPos.x % (10 * resMult);
+	int y = (int)currentPos.y - (int)currentPos.y % (10 * resMult);
+
+	return Vector2{ (float)x, (float)y };
 }
