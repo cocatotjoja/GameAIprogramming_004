@@ -33,6 +33,7 @@ public:
 	Vector2 GetPosition() { return position; };
 	Vector2 GetID() { return ID; };
 	bool IsBlocked();
+	bool IsFogged() { return fog; };
 	int GetState() { return state; };
 	void SetState(int newState) { state = newState; };
 	void SetBlocked(bool block) { blocked = block; };
@@ -46,6 +47,4 @@ public:
 
 	void Draw();
 	void RemoveFog() { fog = false; };
-
-	// TODO: Add fog checker
 };

@@ -1,5 +1,6 @@
 #include "Pathfinder.h"
 #include <cstdlib>
+#include <iostream>
 using namespace std;
 
 //Return 0, if shouldn'd add, returns 1 if unchecked, returns 2 if opened, returns 3 if closed
@@ -45,6 +46,8 @@ int Pathfinder::ShouldAdd(Node(&map1)[100][100], int x, int y, int corner, int w
 			break;
 		}
 
+
+		int state = map1[x][y].GetState();
 		// Check state, Unchecked = 1, Opened = 2, Closed = 3
 		switch (map1[x][y].GetState())
 		{
@@ -69,6 +72,7 @@ int Pathfinder::ShouldAdd(Node(&map1)[100][100], int x, int y, int corner, int w
 
 void Pathfinder::AddNode(Node(&map1)[100][100], Vector2 parentID, int parentXplus, int parentYplus, float addValue, int corner, float parentValue, int width, int height, Vector2 goal)
 {
+	//std::cout << "Testing Node: " << parentXplus << " , " << parentYplus << std::endl;
 	switch (ShouldAdd(map1, parentXplus, parentYplus, corner, width, height))
 	{
 	case 1:
@@ -103,13 +107,14 @@ void Pathfinder::AddNode(Node(&map1)[100][100], Vector2 parentID, int parentXplu
 			// Remove from closed list
 			for (int i = 0; i < closed.size(); i++)
 			{
-				if (map1[parentXplus][parentYplus].GetPosition() == closed[i]->GetPosition())
+				if (map1[parentXplus][parentYplus].GetID() == closed[i]->GetID())
 				{
 					closed.at(i) = closed.back();
 					closed.pop_back();
 				}
 			}
 		}
+
 		break;
 	default:
 		break;
@@ -117,26 +122,33 @@ void Pathfinder::AddNode(Node(&map1)[100][100], Vector2 parentID, int parentXplu
 }
 
 
-void Pathfinder::FindPath(Node(&map1)[100][100], int width, int height, Vector2 start, Vector2 goal, stack<Vector2> &returnPath)
+void Pathfinder::FindPath(Node(&map1)[100][100], Vector2 start, Vector2 goal, stack<Vector2> &returnPath)
 {
 	if (found)
 	{
 		return;
 	}
-
+	int checkSize;
 	if (opened.empty())
 	{
-		int x = start.x / 20;
-		int y = start.y / 20;
-		opened.push_back(&(map1[1][height - 2]));
+		int x = start.x;
+		int y = start.y;
+		opened.push_back(&(map1[x][y]));
 		map1[x][y].SetValues(0, goal);
 		map1[x][y].SetState(2);
 		map1[x][y].SetParent(map1[x][y].GetID());
+		checkSize = opened.size();
 	}
-	
 
 	while (!found)
 	{
+		checkSize = opened.size();
+		if (opened.empty())
+		{
+			std::cout << "NO PATH FOUND" << std::endl;
+			map1[(int)goal.x][(int)goal.y].SetBlocked(true);
+			return;
+		}
 		// Loop through opened nodes and find the smallest one
 		int smallestID = 0;
 		int smallestValue = opened[0]->GetValueTotal();
@@ -150,14 +162,13 @@ void Pathfinder::FindPath(Node(&map1)[100][100], int width, int height, Vector2 
 		}
 
 
-		if (opened[smallestID]->GetPosition() == goal)
+		if (opened[smallestID]->GetID() == goal)
 		{
 
 			Vector2 currentID = opened[smallestID]->GetID();
 			while (currentID != map1[(int)currentID.x][(int)currentID.y].GetParent())
 			{
-				//map1[(int)currentID.x][(int)currentID.y].SetState(4);
-				returnPath.push(currentID * 10 * resMult);
+				returnPath.push((currentID * 10 * resMult) + (Vector2{ 5, 5 }*resMult));
 				currentID = map1[(int)currentID.x][(int)currentID.y].GetParent();
 			}
 			found = true;
@@ -205,9 +216,13 @@ void Pathfinder::FindPath(Node(&map1)[100][100], int width, int height, Vector2 
 	// Reset all nodes
 	for (size_t x = 0; x < 100; x++)
 	{
+		int j = 101;
 		for (size_t y = 0; y < 100; y++)
 		{
 			map1[x][y].ResetNode();
 		}
 	}
+	opened.clear();
+	closed.clear();
+	found = false;
 }

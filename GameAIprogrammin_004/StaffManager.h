@@ -1,23 +1,20 @@
 #pragma once
 
+#include <vector>
 #include "globals.h"
 #include "worker.h"
 
 class StaffManager
 {
 private:
-	Worker workers[50];
-	Scout scouts[50];
-	Soldier soldiers[50];
-	Crafter crafters[50];
-
-	int workerCount = 50;
-	int scoutCount = 0;
-	int soldierCount = 0;
-	int crafterCount = 0;
+	Map* map;
+	std::vector<Worker> workers;
+	std::vector<Scout> scouts;
+	std::vector<Soldier> soldiers;
+	std::vector<Crafter> crafters;
 
 public:
-	StaffManager();
+	StaffManager(Map* newMap);
 
 	void MakeScout();
 	void MakeSoldier();
@@ -26,7 +23,7 @@ public:
 	void Update();
 	void Draw();
 	
-	int GetNumWorkers() { return workerCount; };
+	int GetNumWorkers() { return workers.size(); };
 	int AvailableWorker();
 	bool AvailableCrafter(CrafterType type);
 

@@ -7,12 +7,14 @@
 #include "objects.h"
 #include "globals.h"
 #include "mapReader.h"
+#include "Pathfinder.h"
 
 using namespace std;
 
 class Map
 {
 	MapReader rm;
+	Pathfinder pathfinder;
 	vector<Tree> trees;
 	vector<Ore> ironOre;
 	vector<Rectangle> swamps;
@@ -26,4 +28,8 @@ public:
 	void AddOre();
 
 	Workshop* GetWorkshop(WorkshopType type);
+	Vector2 GetFogPos(Vector2 quad);
+	Vector2 GetFogPosRand();
+	void RemoveFog(Vector2 index);
+	void GetPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath);
 };

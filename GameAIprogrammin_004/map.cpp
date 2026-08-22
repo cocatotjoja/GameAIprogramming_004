@@ -117,3 +117,45 @@ Workshop* Map::GetWorkshop(WorkshopType type)
 	}
 }
 
+Vector2 Map::GetFogPos(Vector2 quad)
+{
+	for (size_t x = quad.x; x < 100; x++)
+	{
+		for (size_t y = quad.y; y < 100; y++)
+		{
+			if (rm.mapGrid[x][y].IsFogged() && rm.mapGrid[x][y].IsBlocked() == false)
+			{
+				return Vector2{ (float)x, (float)y };
+			}
+		}
+	}
+	return Vector2{ -1, -1 };
+}
+
+Vector2 Map::GetFogPosRand()
+{
+	int x = RandomIntRange(0, 99);
+	int y = RandomIntRange(0, 99);
+	// Check not blocked or used
+	while (rm.mapGrid[x][y].IsBlocked() || rm.mapGrid[x][y].IsFogged() == false)
+	{
+		x = RandomIntRange(1, 98);
+		y = RandomIntRange(1, 98);
+	}
+
+
+	return Vector2{ (float)x, (float)y };
+}
+
+void Map::RemoveFog(Vector2 index)
+{
+	int x = index.x;
+	int y = index.y;
+	rm.mapGrid[x][y].RemoveFog();
+}
+
+void Map::GetPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath)
+{
+	pathfinder.FindPath(rm.mapGrid, start, goal, returnPath);
+}
+

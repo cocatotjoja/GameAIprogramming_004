@@ -23,8 +23,8 @@ void Worker::Update()
 
 void Worker::Draw()
 {
-	Rectangle boundary = { position.x, position.y, 1*resMult, 1*resMult };
-	DrawRectangleRec(boundary, Mwhite);
+	Rectangle boundary = { position.x, position.y, 4*resMult, 4*resMult };
+	DrawRectangleRec(boundary, Mred);
 }
 
 Vector2 Worker::Seek(Vector2 targetPos)
@@ -45,7 +45,12 @@ void Worker::FollowPath()
 	{
 		path.pop();
 	}
-	velocity += Seek(path.top()) * GetFrameTime();
+	if (path.empty())
+	{
+		return;
+	}
+	//velocity += Seek(path.top()) * GetFrameTime();
+	velocity += Seek(path.top());
 }
 
 bool Worker::HaveProduct()
@@ -137,7 +142,7 @@ void Worker::GetProduct(Product newProduct, WorkshopType newWorkshopType)
 
 void Worker::Harvest()
 {
-	if (path.size() < 1)
+	if (path.empty())
 	{
 		velocity = { 0,0 };
 		if (!harvesting)
@@ -148,9 +153,9 @@ void Worker::Harvest()
 				timer = 30;
 			}
 		}
-		if (timer > 0)
+		if (timer > 0.0)
 		{
-			timer--;
+			timer -= GetFrameTime();
 		}
 		else
 		{
@@ -186,7 +191,7 @@ void Worker::Harvest()
 
 void Worker::Transport()
 {
-	if (path.size() < 1)
+	if (path.empty() < 1)
 	{
 		velocity = { 0,0 };
 		switch (workshop)
@@ -214,34 +219,76 @@ void Worker::Transport()
 	}
 }
 
+Scout::Scout(Vector2 quad, Vector2 newPos, Map* newMap)
+{
+	quadrant = quad;
+	position = newPos;
+	map = newMap;
+	timer = 3.0f;		// Should be 60.0f
+}
+
 void Scout::Update()
 {
+	if (timer > 0.0)
+	{
+		timer -= GetFrameTime();
+		return;
+		if (timer < 0.0)
+		{
+			state = SCOUT;
+		}
+	}
 	switch (state)
 	{
 	case IDLE:
 		velocity = { 0, 0 };
 		break;
 	case SCOUT:
-		// TODO
+		Scouting();
 		break;
 	default:
 		break;
 	}
+
+
+	if (Vector2Length(velocity) > maxSpeed)
+	{
+		velocity = Vector2Normalize(velocity) * maxSpeed;
+	}
 	// Update position
-	position += velocity * GetFrameTime();
+	position += velocity;
 }
 
 void Scout::Scouting()
 {
-	// TODO
-	if (target == Vector2{ (float)-1, (float)-1 })
+	Vector2 currentNode = GetNearestNode(position);
+
+	// Clear nearby fog
+	map->RemoveFog(currentNode);
+	map->RemoveFog(currentNode + Vector2{  1,  1 });
+	map->RemoveFog(currentNode + Vector2{ -1, -1 });	
+	map->RemoveFog(currentNode + Vector2{  0, -1 });
+	map->RemoveFog(currentNode + Vector2{  0,  1 });
+	map->RemoveFog(currentNode + Vector2{  -1, 0 });
+	map->RemoveFog(currentNode + Vector2{   1, 0 });
+	map->RemoveFog(currentNode + Vector2{   1, -1 });
+	map->RemoveFog(currentNode + Vector2{  -1,  1 });
+	
+	while (path.empty())
 	{
-		// TODO: Find new target
+		Vector2 nextFog = map->GetFogPosRand();
+		if (nextFog == Vector2{ -1, -1 })
+		{
+			state = IDLE;
+			return;
+		}
+		else
+		{
+			map->GetPath(currentNode, nextFog, path);
+		}
 	}
-	else
-	{
-		// TODO: Get path to new target
-	}
+
+	FollowPath();
 }
 
 void Soldier::Update()
@@ -257,11 +304,13 @@ void Soldier::Update()
 	// Update position
 	position += velocity * GetFrameTime();
 }
-void Crafter::GetCrafting(int time)
+
+void Crafter::GetCrafting()
 {
 	state = CRAFTING;
-	timer = time;
+	timer = craftingTime;
 }
+
 void Crafter::Update()
 {
 	switch (state)
@@ -283,7 +332,7 @@ void Crafter::Crafting()
 {
 	if (timer > 0)
 	{
-		timer--;
+		timer -= GetFrameTime();
 	}
 	else
 	{

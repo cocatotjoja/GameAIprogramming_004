@@ -1,7 +1,9 @@
 #include "StaffManager.h"
 
-StaffManager::StaffManager()
+StaffManager::StaffManager(Map* newMap)
 {
+	map = newMap;
+
 	// Create workers
 	for (size_t i = 0; i < 50; i++)
 	{
@@ -11,8 +13,17 @@ StaffManager::StaffManager()
 		x += RandomIntRange(2, (90*resMult)-2 );
 		y += RandomIntRange(2, (90*resMult)-2 );
 
-		workers[i] = Worker({ (float)x, (float)y });
+		workers.push_back(Worker({ (float)x, (float)y }, map));
 	}
+}
+
+void StaffManager::MakeScout()
+{
+	Vector2 quad = { 0,0 };
+	Vector2 pos = workers.back().position;
+	scouts.push_back(Scout(quad, pos, map));
+
+	workers.pop_back();
 }
 
 void StaffManager::Update()
@@ -64,9 +75,9 @@ void StaffManager::Draw()
 int StaffManager::AvailableWorker()
 {
 	int availableWorkers = 0;
-	for (size_t i = 0; i < 50; i++)
+	for (Worker w : workers)
 	{
-		if (workers[i].IsFree())
+		if (w.IsFree())
 		{
 			availableWorkers++;
 		}
@@ -76,9 +87,9 @@ int StaffManager::AvailableWorker()
 
 bool StaffManager::AvailableCrafter(CrafterType type)
 {
-	for (size_t i = 0; i < 50; i++)
+	for (Crafter c : crafters)
 	{
-		if (crafters[i].GetType() == type && crafters[i].IsFree())
+		if (c.GetType() == type && c.IsFree())
 		{
 			return true;
 		}

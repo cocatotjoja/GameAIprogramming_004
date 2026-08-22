@@ -31,15 +31,11 @@ Node::Node(int x, int y, char Type)
 		blocked = true;
 		ground = Mburgundy;
 	}
-
-
-
-
 }
 
 bool Node::IsBlocked()
 {
-	if (type == 'B' || type == 'V')
+	if (type == 'B' || type == 'V' || blocked)
 	{
 		return true;
 	}
@@ -60,11 +56,17 @@ void Node::ResetNode()
 	valueLeft = NULL;
 	valueTotal = NULL;
 	parent = ID;
-	state = 0;
-	blocked = false;
+	state = 1;
 }
 void Node::Draw()
 {
 	Rectangle boundary = { position.x, position.y, size.x, size.y };
-	DrawRectangleRec(boundary, ground);
+	if (fog)
+	{
+		DrawRectangleRec(boundary, Mgrey); 
+	}
+	else
+	{
+		DrawRectangleRec(boundary, ground);
+	}
 }
