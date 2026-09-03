@@ -14,11 +14,20 @@ void Worker::Update()
 	case TRANSPORT:
 		Transport();
 		break;
+	case SEARCH:
+		Search();
+		break;
 	default:
 		break;
 	}
+
+
+	if (Vector2Length(velocity) > maxSpeed)
+	{
+		velocity = Vector2Normalize(velocity) * maxSpeed;
+	}
 	// Update position
-	position += velocity * GetFrameTime();
+	position += velocity;
 }
 
 void Worker::Draw()
@@ -89,99 +98,74 @@ bool Worker::IsFree()
 
 void Worker::GetProduct(Product newProduct, WorkshopType newWorkshopType)
 {
-	// Check if it has the product
-	if (HaveProduct())
-	{
-		//Then deliver where needed
-		switch (workshop)
-		{
-		case COAL_MILL:
-			// GET PATH TO COAL MILL
-			break;
-		case SMELT:
-			// GET PATH TO SMELT
-			break;
-		case FORGE:
-			// GET PATH TO FORGE
-			break;
-		case TRAINING_CAMP:
-			// GET PATH TO TRAINING CAMP
-			break;
-		default:
-			break;
-		}
-		state = TRANSPORT;
-	}
-	else
-	{
-		// If not go to the correct workshop
-		switch (product)
-		{
-		case WOOD:
-			// GET PATH TO NEAREST TREE
-			break;
-		case ORE:
-			// GET PATH TO NEAREST ORE
-			break;
-		case COAL:
-			// GET PATH TO COAL MILL
-			break;
-		case BAR:
-			// GET PATH TO SMELT
-			break;
-		case SWORD:
-			// GET PATH TO FORGE
-			break;
-		default:
-			break;
-		}
-		state = HARVEST;
-
-	}
+	product = newProduct;
+	workshop = newWorkshopType;
+	state = SEARCH;
 }
 
 void Worker::Harvest()
 {
 	if (path.empty())
 	{
-		velocity = { 0,0 };
-		if (!harvesting)
+		switch (product)
 		{
-			harvesting = true;
-			if (product == WOOD)
+		case WOOD:
+			if (timer > 0.0)
 			{
-				timer = 30;
+				timer -= GetFrameTime();
 			}
-		}
-		if (timer > 0.0)
-		{
-			timer -= GetFrameTime();
-		}
-		else
-		{
-			switch (product)
+			else
 			{
-			case WOOD:
 				wood++;
-				break;
-			case ORE:
-				ore++;
-				break;
-			case COAL:
-				coal++;
-				break;
-			case BAR:
-				bar++;
-				break;
-			case SWORD:
-				sword++;
-				break;
-			default:
-				break;
+				map->trees[materialID].cut = true;
+				state = TRANSPORT;
 			}
-			harvesting = false;
+			break;
+
+		case ORE:
+			ore++;
+			map->ironOre[materialID].cut = true;
 			state = TRANSPORT;
+			break;
+
+		case COAL:
+			// Check for product
+			if (map->GetWorkshop(COAL_MILL)->CheckInventory(COAL));
+			{
+				map->GetWorkshop(COAL_MILL)->RemoveMaterial(COAL);
+				coal++;
+				state = TRANSPORT;
+
+			}
+			break;
+
+		case BAR:
+			// Check for product
+			if (map->GetWorkshop(SMELT)->CheckInventory(BAR));
+			{
+				map->GetWorkshop(SMELT)->RemoveMaterial(BAR);
+				bar++;
+				state = TRANSPORT;
+
+			}
+			break;
+
+		case SWORD:
+			// Check for product
+			if (map->GetWorkshop(FORGE)->CheckInventory(SWORD));
+			{
+				map->GetWorkshop(FORGE)->RemoveMaterial(SWORD);
+				sword++;
+				state = TRANSPORT;
+
+			}
+			break;
+
+		default:
+			break;
 		}
+		harvesting = false;
+		state = TRANSPORT;
 	}
 	else
 	{
@@ -191,40 +175,79 @@ void Worker::Harvest()
 
 void Worker::Transport()
 {
-	if (path.empty() < 1)
+	// TODO:
+}
+
+void Worker::Search()
+{
+	Vector2 goalNode;
+	Vector2 startNode = GetNearestNode(position);
+	int ID;
+	switch (product)
 	{
-		velocity = { 0,0 };
-		switch (workshop)
-		{
-		case COAL_MILL:
-			// GET PATH TO COAL MILL
-			break;
-		case SMELT:
-			// GET PATH TO SMELT
-			break;
-		case FORGE:
-			// GET PATH TO FORGE
-			break;
-		case TRAINING_CAMP:
-			// GET PATH TO TRAINING CAMP
-			break;
-		default:
-			break;
-		}
-		state = IDLE;
-	}
-	else
-	{
-		FollowPath();
+	case WOOD:
+		// GET TREE
+		ID = map->GetTree();
+		// GET PATH TO TREE
+		goalNode = GetNearestNode(map->trees[ID].position);
+		map->GetPath(startNode, goalNode, path);
+
+		// TODO: Handle if no tree is available
+
+		materialID = ID;
+		map->trees[materialID].booked = true;
+		timer = 30.0;
+		state = HARVEST;
+		break;
+
+	case ORE:
+		// GET ORE
+		ID = map->GetOre();
+		// GET PATH TO ORE
+		goalNode = GetNearestNode(map->ironOre[ID].position);
+		map->GetPath(startNode, goalNode, path);
+
+		// TODO: Handle if no ore is available
+
+		materialID = ID;
+		map->ironOre[materialID].booked = true;
+		state = HARVEST;
+		break;
+
+	case COAL:
+		// GET PATH TO COAL MILL
+		goalNode = GetNearestNode(map->GetWorkshop(COAL_MILL)->GetPosition());
+		map->GetPath(startNode, goalNode, path);
+
+		state = HARVEST;
+		break;
+
+	case BAR:
+		// GET PATH TO SMELT
+		goalNode = GetNearestNode(map->GetWorkshop(SMELT)->GetPosition());
+		map->GetPath(startNode, goalNode, path);
+
+		state = HARVEST;
+		break;
+
+	case SWORD:
+		// GET PATH TO FORGE
+		goalNode = GetNearestNode(map->GetWorkshop(FORGE)->GetPosition());
+		map->GetPath(startNode, goalNode, path);
+
+		state = HARVEST;
+		break;
+
+	default:
+		break;
 	}
 }
 
-Scout::Scout(Vector2 quad, Vector2 newPos, Map* newMap)
+Scout::Scout(Vector2 newPos, Map* newMap)
 {
-	quadrant = quad;
 	position = newPos;
 	map = newMap;
-	timer = 3.0f;		// Should be 60.0f
+	timer = 60.0f;
 }
 
 void Scout::Update()
@@ -291,6 +314,13 @@ void Scout::Scouting()
 	FollowPath();
 }
 
+Soldier::Soldier(float time, Vector2 newPos, Map* newMap)
+{
+	timer = time;
+	position = newPos;
+	map = newMap;
+}
+
 void Soldier::Update()
 {
 	switch (state)
@@ -336,7 +366,6 @@ void Crafter::Crafting()
 	}
 	else
 	{
-		// TODO: Increase workshop product count
 		state = IDLE;
 	}
 }

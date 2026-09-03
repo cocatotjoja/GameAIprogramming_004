@@ -7,6 +7,7 @@ enum States
 {
 	HARVEST,
 	TRANSPORT,
+	SEARCH,
 	CRAFTING,
 	SCOUT,
 	IDLE
@@ -18,7 +19,8 @@ enum Product
 	ORE,
 	COAL,
 	BAR,
-	SWORD
+	SWORD,
+	SOLDIER
 };
 
 enum WorkshopType
@@ -33,8 +35,7 @@ enum WorkshopState
 {
 	WAITING,
 	RUNNING,
-	AVAILABLE,
-	NOT_BUILT
+	AVAILABLE
 };
 
 enum CrafterType
@@ -42,7 +43,8 @@ enum CrafterType
 	MINER,
 	SMITH,
 	SMELTER,
-	BUILDER
+	BUILDER,
+	NO_CRAFTER
 };
 
 // Resolution Multiplier
@@ -54,16 +56,21 @@ static float height = 1000 * resMult;
 static float margin = 0;
 
 //Project colors
-static Color Mblack = { 54, 57, 59, 255 };
+static Color Mblack = { 5, 5, 5, 255 };
 static Color Mwhite = { 250, 250, 250, 255 };
-static Color Mgrey = { 240, 240, 240, 255 };
-static Color Mgreen = { 176, 190, 162, 255 };
+static Color Mdarkgrey = { 54, 57, 59, 255 };
+static Color Mlightgrey = { 230, 230, 230, 255 };
+
+static Color Mred = { 250, 0, 0, 255 };
+static Color Mblue = { 0, 250, 0, 255 };
+static Color Mgreen = { 0, 0, 250, 255 };
+
+static Color Mlightgreen = { 176, 190, 162, 255 };
 static Color MdarkGreen = { 40, 70, 70, 255 };
-static Color Mblue = { 165, 216, 255, 255 };
+static Color Mlightblue = { 165, 216, 255, 255 };
 static Color Mbrown = { 186, 155, 141, 255 };
 static Color MdarkBrown = { 140, 117, 106, 255 };
 static Color Mburgundy = { 111, 50, 60, 255 };
-static Color Mred = { 250, 0, 0, 255 };
 
 
 // Function for random int in a given range

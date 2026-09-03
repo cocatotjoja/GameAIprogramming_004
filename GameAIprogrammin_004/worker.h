@@ -7,6 +7,8 @@
 #include "globals.h"
 #include "map.h"
 
+
+
 class Worker
 {
 public:
@@ -19,8 +21,9 @@ public:
 	stack<Vector2> path;
 	bool followingPath = false;
 	bool harvesting = false;
-	bool transforming = false;
+
 	Product product;
+	int materialID;
 	WorkshopType workshop;
 	float timer = 0;
 	int wood = 0;
@@ -43,18 +46,18 @@ public:
 	void GetProduct(Product newProduct, WorkshopType newWorkshopType);
 	void Harvest();
 	void Transport();
+	void Search();
 };
 
 class Scout : public Worker
 {
 private:
-	Vector2 quadrant = { 0,0 };
 	Vector2 target = { (float)-1, (float)-1 };
 
 public:
 	Scout() {};
 	//Scout(Vector2 quad, Vector2 newPos, Map* newMap) : Worker(newPos, newMap), quadrant(quad) {};
-	Scout(Vector2 quad, Vector2 newPos, Map* newMap);
+	Scout(Vector2 newPos, Map* newMap);
 
 	void Update();
 	void Scouting();
@@ -67,6 +70,7 @@ private:
 public:
 	Soldier() {};
 	Soldier(Vector2 newPos, Map* newMap) : Worker(newPos, newMap) {};
+	Soldier(float time, Vector2 newPos, Map* newMap);
 
 	void Update();
 };
@@ -78,7 +82,7 @@ class Crafter : public Worker
 
 public:
 	Crafter() : type(BUILDER) {};
-	Crafter(CrafterType newType, float newTime, Vector2 newPos, Map* newMap) : Worker(newPos, newMap), type(newType), craftingTime(newTime) {};
+	Crafter(CrafterType newType, Vector2 newPos, Map* newMap) : Worker(newPos, newMap), type(newType) {};
 
 	void GetCrafting();
 	void Update();

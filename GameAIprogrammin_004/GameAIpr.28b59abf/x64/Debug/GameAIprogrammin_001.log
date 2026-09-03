@@ -1,33 +1,8 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (GameAIpr.28b59abf\x64\Debug\) contains files shared from another project (GameAIprogrammin_001.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Node.cpp
-  Pathfinder.cpp
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(147,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(148,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(153,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(158,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(167,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(173,45): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(199,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(199,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(201,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(201,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(203,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(203,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(205,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(205,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(209,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(209,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(211,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(211,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(213,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(213,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(215,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(215,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  map.cpp
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(132,16): warning C4244: 'initializing': conversion from 'float' to 'size_t', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(134,17): warning C4244: 'initializing': conversion from 'float' to 'size_t', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(162,8): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(163,8): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(80,1): warning C4715: 'Pathfinder::ShouldAdd': not all control paths return a value
-  GameAIprogrammin_001.vcxproj -> C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\x64\Debug\GameAIprogrammin_004.exe
+  DecisionTree.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'DecisionTree.cpp')
+  
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+DecisionTree.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Branch::WalkTree(class Map &,class StaffManager &)" (?WalkTree@Branch@@UEAAXAEAVMap@@AEAVStaffManager@@@Z)
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\x64\Debug\GameAIprogrammin_004.exe : fatal error LNK1120: 1 unresolved externals

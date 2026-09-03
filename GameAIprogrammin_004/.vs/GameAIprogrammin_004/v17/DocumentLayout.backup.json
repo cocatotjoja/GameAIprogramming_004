@@ -3,52 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\branch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:branch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Pathfinder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:Pathfinder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\branch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:branch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:DecisionTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:Node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:DecisionTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Pathfinder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:Pathfinder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:objects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:worker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:StaffManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,35 +66,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-10T10:36:23.652Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "globals.h",
               "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h",
               "RelativeDocumentMoniker": "globals.h",
               "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h",
               "RelativeToolTip": "globals.h",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-16T12:47:28.587Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "map.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.h",
+              "RelativeDocumentMoniker": "map.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.h",
+              "RelativeToolTip": "map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-08-30T10:39:31.8Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "map.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp",
+              "RelativeDocumentMoniker": "map.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp",
+              "RelativeToolTip": "map.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-30T10:39:34.3Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -96,126 +128,122 @@
               "RelativeDocumentMoniker": "StaffManager.h",
               "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h",
               "RelativeToolTip": "StaffManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-22T11:37:30.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-23T17:48:55.146Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Pathfinder.h",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Pathfinder.h",
-              "RelativeDocumentMoniker": "Pathfinder.h",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Pathfinder.h",
-              "RelativeToolTip": "Pathfinder.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-04T20:47:12.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pathfinder.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Pathfinder.cpp",
-              "RelativeDocumentMoniker": "Pathfinder.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Pathfinder.cpp",
-              "RelativeToolTip": "Pathfinder.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-04T20:51:14.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "StaffManager.cpp",
               "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp",
               "RelativeDocumentMoniker": "StaffManager.cpp",
               "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp",
               "RelativeToolTip": "StaffManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-22T11:37:33.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-23T17:48:33.253Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "map.h",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.h",
-              "RelativeDocumentMoniker": "map.h",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.h",
-              "RelativeToolTip": "map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-01T11:02:32.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "map.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp",
-              "RelativeDocumentMoniker": "map.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\map.cpp",
-              "RelativeToolTip": "map.cpp",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAEcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-01T11:03:27.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Node.h",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Node.h",
-              "RelativeDocumentMoniker": "Node.h",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Node.h",
-              "RelativeToolTip": "Node.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-01T10:31:22.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Node.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Node.cpp",
-              "RelativeDocumentMoniker": "Node.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\Node.cpp",
-              "RelativeToolTip": "Node.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-01T11:06:45.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "worker.h",
               "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.h",
               "RelativeDocumentMoniker": "worker.h",
               "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.h",
               "RelativeToolTip": "worker.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-06-30T21:17:58.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T15:14:25.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "worker.cpp",
               "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp",
               "RelativeDocumentMoniker": "worker.cpp",
               "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp",
               "RelativeToolTip": "worker.cpp",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAAABYBAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-06-30T21:24:19.138Z",
+              "WhenOpened": "2026-08-25T18:36:19.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "objects.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.h",
+              "RelativeDocumentMoniker": "objects.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.h",
+              "RelativeToolTip": "objects.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-08-25T18:32:49.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "objects.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp",
+              "RelativeDocumentMoniker": "objects.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp",
+              "RelativeToolTip": "objects.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-25T18:32:58.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DecisionTree.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h",
+              "RelativeDocumentMoniker": "DecisionTree.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h",
+              "RelativeToolTip": "DecisionTree.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-08-23T15:55:43.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DecisionTree.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp",
+              "RelativeDocumentMoniker": "DecisionTree.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp",
+              "RelativeToolTip": "DecisionTree.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-23T16:02:06.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "branch.h",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\branch.h",
+              "RelativeDocumentMoniker": "branch.h",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\branch.h",
+              "RelativeToolTip": "branch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-08-23T14:38:57.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "branch.cpp",
+              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\branch.cpp",
+              "RelativeDocumentMoniker": "branch.cpp",
+              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\branch.cpp",
+              "RelativeToolTip": "branch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-23T14:39:00.744Z",
               "EditorCaption": ""
             }
           ]

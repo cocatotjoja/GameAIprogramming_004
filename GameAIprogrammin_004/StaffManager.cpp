@@ -1,4 +1,5 @@
 #include "StaffManager.h"
+#include "map.h"
 
 StaffManager::StaffManager(Map* newMap)
 {
@@ -19,11 +20,38 @@ StaffManager::StaffManager(Map* newMap)
 
 void StaffManager::MakeScout()
 {
-	Vector2 quad = { 0,0 };
 	Vector2 pos = workers.back().position;
-	scouts.push_back(Scout(quad, pos, map));
+	scouts.push_back(Scout(pos, map));
 
 	workers.pop_back();
+}
+
+void StaffManager::MakeSoldier()
+{
+	for (int i = workers.size() - 1; i >= 0; i--)
+	{
+		if (workers[i].state == IDLE)
+		{
+			soldiers.push_back(Soldier(60.0f, workers[i].position, map));
+			workers[i] = workers.back();
+			workers.pop_back();
+		}
+	}
+}
+
+void StaffManager::MakeCrafter(CrafterType type)
+{
+	for (int i = workers.size()-1; i >= 0; i--)
+	{
+		int time;
+		if(workers[i].state == IDLE)
+		{
+			crafters.push_back(Crafter(type, workers[i].position, map));
+			crafters.back().timer = 120.0;
+			workers[i] = workers.back();
+			workers.pop_back();
+		}
+	}
 }
 
 void StaffManager::Update()
@@ -97,6 +125,18 @@ bool StaffManager::AvailableCrafter(CrafterType type)
     return false;
 }
 
+bool StaffManager::HaveCrafter(CrafterType type)
+{
+	for (Crafter c : crafters)
+	{
+		if (c.GetType() == type)
+		{
+			return true;
+		}
+	}
+    return false;
+}
+
 void StaffManager::AssignWorkers(Product productType, WorkshopType workshopType, int numberNeeded)
 {
 	// Assign correct number of workers
@@ -104,7 +144,7 @@ void StaffManager::AssignWorkers(Product productType, WorkshopType workshopType,
 	int assigned = 0;
 	while (index < 50 && assigned < numberNeeded)
 	{
-		if (workers[index].IsFree())
+		if (workers[index].IsFree())		// TODO:	SHOULD BE MOVED TO THE FUNCTION IN THE WORKER CLASS
 		{
 			// Assign worker
 			workers[index].GetProduct(productType, workshopType);
@@ -114,14 +154,18 @@ void StaffManager::AssignWorkers(Product productType, WorkshopType workshopType,
 	}
 }
 
-void StaffManager::AssignCrafter(CrafterType crafterType)
+void StaffManager::AssignCrafter(CrafterType crafterType, float newTime)
 {
-	for (size_t i = 0; i < 50; i++)
+	if (crafterType != NO_CRAFTER)
 	{
-		if (crafters[i].GetType() == crafterType && crafters[i].IsFree())
+		for (size_t i = 0; i < 50; i++)
 		{
-			// Set crafter to working
-			crafters[i].GetCrafting();
+			if (crafters[i].GetType() == crafterType && crafters[i].IsFree())
+			{
+				// Set crafter to working
+				crafters[i].GetCrafting();
+				crafters[i].timer = newTime;
+			}
 		}
 	}
 }

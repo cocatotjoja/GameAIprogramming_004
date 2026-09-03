@@ -4,6 +4,8 @@
 #include "globals.h"
 #include "worker.h"
 
+class Map;
+
 class StaffManager
 {
 private:
@@ -26,7 +28,8 @@ public:
 	int GetNumWorkers() { return workers.size(); };
 	int AvailableWorker();
 	bool AvailableCrafter(CrafterType type);
+	bool HaveCrafter(CrafterType type);
 
 	void AssignWorkers(Product productType, WorkshopType workshopType, int numberNeeded);
-	void AssignCrafter(CrafterType crafterType);
+	void AssignCrafter(CrafterType crafterType, float newTime);
 };

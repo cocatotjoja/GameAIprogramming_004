@@ -20,7 +20,7 @@ Node::Node(int x, int y, char Type)
 	else if (type == 'V')
 	{
 		blocked = true;
-		ground = Mblue;
+		ground = Mlightblue;
 	}
 	else if (type == 'G')
 	{
@@ -61,12 +61,14 @@ void Node::ResetNode()
 void Node::Draw()
 {
 	Rectangle boundary = { position.x, position.y, size.x, size.y };
+	DrawRectangleRec(boundary, ground);
+}
+
+void Node::DrawFog()
+{
 	if (fog)
 	{
-		DrawRectangleRec(boundary, Mgrey); 
-	}
-	else
-	{
-		DrawRectangleRec(boundary, ground);
+		Rectangle boundary = { position.x, position.y, size.x, size.y };
+		DrawRectangleRec(boundary, Mlightgrey);
 	}
 }

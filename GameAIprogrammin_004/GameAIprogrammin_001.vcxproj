@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="branch.cpp" />
+    <ClCompile Include="DecisionTree.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapReader.cpp" />
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="branch.h" />
+    <ClInclude Include="DecisionTree.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="mapReader.h" />

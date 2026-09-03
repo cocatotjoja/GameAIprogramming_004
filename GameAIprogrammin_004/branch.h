@@ -4,7 +4,7 @@
 #include "objects.h"
 #include "StaffManager.h"
 
-
+// Decision Brances
 class Branch
 {
 public:
@@ -36,24 +36,24 @@ public:
 
 class HaveWorker : public Branch
 {
+public:
 	HaveWorker() {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class HaveCrafter : public Branch
+{
+public:
+	CrafterType type;
+	HaveCrafter(CrafterType newType) : type(newType) {};
 	void WalkTree(Map& map, StaffManager& staff);
 };
 
 class AvailableWorkshop : public Branch
 {
-	Branch* childWait = nullptr;
-	Branch* childRunning = nullptr;
+public:
 	WorkshopType type;
 	AvailableWorkshop(WorkshopType newType) : type(newType) {};
-	void WalkTree(Map& map, StaffManager& staff);
-
-	void SetExtraChildren(Branch* waitChild, Branch* runningChild);
-};
-
-class AvailableWorker : public Branch
-{
-	AvailableWorker();
 	void WalkTree(Map& map, StaffManager& staff);
 };
 
@@ -64,4 +64,71 @@ public:
 
 	AvailableCrafter(CrafterType newType) : type(newType) {};
 	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class WorkshopWaiting : public Branch
+{
+public:
+	WorkshopType type;
+	WorkshopWaiting(WorkshopType newType) : type(newType) {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class CheckOrders : public Branch
+{
+public:
+	WorkshopType type;
+	CheckOrders(WorkshopType newType) : type(newType) {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+
+// Action Branches
+class OrderProduct : public Branch
+{
+public:
+	Product type;
+	WorkshopType workshop;
+	int neededAmount;
+
+	OrderProduct(Product newType, WorkshopType newWorkshop, int amount) : type(newType), workshop(newWorkshop), neededAmount(amount) {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class MakeCrafter : public Branch
+{
+public:
+	CrafterType type;
+
+	MakeCrafter(CrafterType newType) : type(newType) {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class GetMaterial : public Branch
+{
+public:
+	Product type;
+	WorkshopType workshop;
+	int neededAmount;
+
+	GetMaterial(Product newType, WorkshopType newWorkshop, int amount) : type(newType), workshop(newWorkshop), neededAmount(amount) {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class StartProducing : public Branch
+{
+public:
+	WorkshopType type;
+	CrafterType crafter;
+	float craftingTime;
+
+	StartProducing(WorkshopType newType, CrafterType newCrafter, float newTime) : type(newType), crafter(newCrafter), craftingTime() {};
+	void WalkTree(Map& map, StaffManager& staff);
+};
+
+class EndPoint : public Branch
+{
+public:
+	EndPoint() {};
+	void WalkTree(Map& map, StaffManager& staff) { return; };
 };

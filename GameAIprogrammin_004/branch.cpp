@@ -2,7 +2,7 @@
 
 void WorkshopInventory::WalkTree(Map& map, StaffManager& staff)
 {
-	if (map.GetWorkshop(shop)->CheckInventory(type) < ammount)
+	if (map.GetWorkshop(shop)->CheckInventory(type) >= ammount)
 	{
 		childTrue->WalkTree(map, staff);
 	}
@@ -14,7 +14,7 @@ void WorkshopInventory::WalkTree(Map& map, StaffManager& staff)
 
 void HaveWorkshop::WalkTree(Map& map, StaffManager& staff)
 {
-	if (map.GetWorkshop(type) != nullptr)
+	if (map.HaveWorkshop(type))
 	{
 		childTrue->WalkTree(map, staff);
 	}
@@ -36,19 +36,11 @@ void HaveWorker::WalkTree(Map& map, StaffManager& staff)
 	}
 }
 
-void AvailableWorkshop::WalkTree(Map& map, StaffManager& staff)
+void HaveCrafter::WalkTree(Map& map, StaffManager& staff)
 {
-	if (map.GetWorkshop(type)->GetState() == AVAILABLE)
+	if (staff.HaveCrafter(type))
 	{
 		childTrue->WalkTree(map, staff);
-	}
-	else if (map.GetWorkshop(type)->GetState() == WAITING)
-	{
-		childWait->WalkTree(map, staff);
-	}
-	else if (map.GetWorkshop(type)->GetState() == RUNNING)
-	{
-		childRunning->WalkTree(map, staff);
 	}
 	else
 	{
@@ -56,15 +48,9 @@ void AvailableWorkshop::WalkTree(Map& map, StaffManager& staff)
 	}
 }
 
-void AvailableWorkshop::SetExtraChildren(Branch* waitChild, Branch* runningChild)
+void AvailableWorkshop::WalkTree(Map& map, StaffManager& staff)
 {
-	childWait = waitChild;
-	childRunning = runningChild;
-}
-
-void AvailableWorker::WalkTree(Map& map, StaffManager& staff)
-{
-	if (staff.AvailableWorker())
+	if (map.GetWorkshop(type)->GetState() == AVAILABLE)
 	{
 		childTrue->WalkTree(map, staff);
 	}
@@ -84,4 +70,74 @@ void AvailableCrafter::WalkTree(Map& map, StaffManager& staff)
 	{
 		childFalse->WalkTree(map, staff);
 	}
+}
+
+void WorkshopWaiting::WalkTree(Map& map, StaffManager& staff)
+{
+	if (map.GetWorkshop(type)->GetState() == WAITING)
+	{
+		childTrue->WalkTree(map, staff);
+	}
+	else
+	{
+		childFalse->WalkTree(map, staff);
+	}
+}
+
+void CheckOrders::WalkTree(Map& map, StaffManager& staff)
+{
+	if (map.GetWorkshop(type)->CheckOrders() > 0)
+	{
+		childTrue->WalkTree(map, staff);
+	}
+	else
+	{
+		childFalse->WalkTree(map, staff);
+	}
+}
+
+void OrderProduct::WalkTree(Map& map, StaffManager& staff)
+{
+	// Calculate Ammount needed
+	int currentAmount = map.GetWorkshop(workshop)->CheckInventory(type);
+	int calculatedAmount = neededAmount - currentAmount;
+
+	// Order Product
+	map.GetWorkshop(workshop)->PlaceOrder(calculatedAmount);
+
+	// Assign Worker
+	staff.AssignWorkers(type, workshop, calculatedAmount);
+
+	// Walk
+	childTrue->WalkTree(map, staff);
+}
+
+void MakeCrafter::WalkTree(Map& map, StaffManager& staff)
+{
+	staff.MakeCrafter(type);
+
+	// Walk
+	childTrue->WalkTree(map, staff);
+}
+
+void GetMaterial::WalkTree(Map& map, StaffManager& staff)
+{
+	// Calculate Ammount needed
+	int currentAmount = map.GetWorkshop(workshop)->CheckInventory(type);
+	int calculatedAmount = neededAmount - currentAmount;
+
+	// Assign Worker
+	staff.AssignWorkers(type, workshop, calculatedAmount);
+
+	// Walk
+	childTrue->WalkTree(map, staff);
+}
+
+void StartProducing::WalkTree(Map& map, StaffManager& staff)
+{
+	map.GetWorkshop(type)->SetState(RUNNING);
+	staff.AssignCrafter(crafter, craftingTime);
+
+	// Walk
+	childTrue->WalkTree(map, staff);
 }

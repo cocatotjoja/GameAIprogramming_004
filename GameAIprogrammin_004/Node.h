@@ -10,7 +10,7 @@ private:
 	Vector2 position;
 	char type;
 	Vector2 size = { 10.0f * resMult, 10.0f * resMult };
-	Color ground = Mgreen;
+	Color ground = Mlightgreen;
 
 
 	// Pathfinder variables
@@ -46,5 +46,6 @@ public:
 	float GetValueTotal() { return valueTotal; };
 
 	void Draw();
+	void DrawFog();
 	void RemoveFog() { fog = false; };
 };

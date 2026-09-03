@@ -8,28 +8,38 @@
 #include "globals.h"
 #include "mapReader.h"
 #include "Pathfinder.h"
+//#include "StaffManager.h"
+
+class StaffManager;
 
 using namespace std;
 
 class Map
 {
+	StaffManager* staff;
 	MapReader rm;
 	Pathfinder pathfinder;
+	
+public:
 	vector<Tree> trees;
 	vector<Ore> ironOre;
 	vector<Rectangle> swamps;
 	vector<Workshop> workshops;
-	
-public:
+
 	Map();
+	Map(StaffManager* newStaff) : staff(newStaff) {};
 	void Draw();
 	void MakeMap();
 	void AddTree(Vector2 pos);
 	void AddOre();
+	void AddWorkshop(WorkshopType type, Vector2 position);
 
 	Workshop* GetWorkshop(WorkshopType type);
-	Vector2 GetFogPos(Vector2 quad);
+	bool HaveWorkshop(WorkshopType type);
 	Vector2 GetFogPosRand();
 	void RemoveFog(Vector2 index);
+	bool IsFoggy();
 	void GetPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath);
+	int GetTree();
+	int GetOre();
 };
