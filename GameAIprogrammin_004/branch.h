@@ -11,7 +11,7 @@ public:
 	Branch* childTrue = nullptr;
 	Branch* childFalse = nullptr;
 
-	virtual void WalkTree(Map& map, StaffManager& staff);
+	virtual void WalkTree(Map& map, StaffManager& staff) {}
 };
 
 class WorkshopInventory : public Branch

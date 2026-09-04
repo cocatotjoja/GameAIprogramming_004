@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "GameAIpr.28b59abf\\x64\\Debug\\objects.obj",
+            "outputs": [
+                "GameAIpr.28b59abf\\x64\\Debug\\objects.cpp.obj.dt.module.json",
+                "GameAIpr.28b59abf\\x64\\Debug\\objects.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
