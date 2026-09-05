@@ -2,7 +2,6 @@
 #include <stack>
 
 #include "raylib.h"
-#include "raymath.h"
 
 #include "globals.h"
 #include "map.h"

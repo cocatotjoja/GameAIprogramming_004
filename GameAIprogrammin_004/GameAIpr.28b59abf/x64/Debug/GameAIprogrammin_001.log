@@ -1,3 +1,67 @@
 ﻿C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(551,5): warning MSB8028: The intermediate directory (GameAIpr.28b59abf\x64\Debug\) contains files shared from another project (GameAIprogrammin_001.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  DecisionTree.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'DecisionTree.cpp')
+  
+  Node.cpp
+  Pathfinder.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(134,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(135,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(140,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(145,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(154,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(160,45): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(185,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(185,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(187,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(187,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(189,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(189,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(191,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(191,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(195,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(195,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(197,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(197,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(199,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(199,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(201,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(201,92): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  StaffManager.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'StaffManager.cpp')
+  
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.cpp(31,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.cpp(44,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.cpp(46,7): warning C4101: 'time': unreferenced local variable
+  branch.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'branch.cpp')
+  
+  main.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\main.cpp(9,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\main.cpp(9,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  map.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'map.cpp')
+  
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(188,8): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(189,8): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(222,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\map.cpp(238,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  mapReader.cpp
+  objects.cpp
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\StaffManager.h(28,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'objects.cpp')
+  
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(10,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(10,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(19,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\objects.cpp(19,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   worker.cpp
+  Generating Code...
+C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\Pathfinder.cpp(71,1): warning C4715: 'Pathfinder::ShouldAdd': not all control paths return a value
   GameAIprogrammin_001.vcxproj -> C:\Users\cocat\Documents\GitHub\GameAIprogramming_004\GameAIprogrammin_004\x64\Debug\GameAIprogrammin_004.exe

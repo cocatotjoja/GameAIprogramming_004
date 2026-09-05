@@ -96,14 +96,12 @@ bool Worker::IsFree()
 	return false;
 }
 
-
 void Worker::GetProduct(Product newProduct, WorkshopType newWorkshopType)
 {
 	product = newProduct;
 	workshop = newWorkshopType;
 	state = SEARCH;
 }
-
 
 void Worker::Harvest()
 {
