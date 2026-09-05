@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "GameAIpr.28b59abf\\x64\\Debug\\worker.obj",
+            "outputs": [
+                "GameAIpr.28b59abf\\x64\\Debug\\worker.h.obj.dt.module.json",
+                "GameAIpr.28b59abf\\x64\\Debug\\worker.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

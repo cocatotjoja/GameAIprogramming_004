@@ -34,7 +34,7 @@ public:
 
 
 	Worker() : position({ 0, 0 }) {};
-	Worker(Vector2 pos, Map* newMap) : position(pos) {};
+	Worker(Vector2 pos, Map* newMap) : position(pos), map(newMap) {};
 	virtual void Update();
 	void Draw();
 
@@ -56,10 +56,10 @@ private:
 
 public:
 	Scout() {};
-	//Scout(Vector2 quad, Vector2 newPos, Map* newMap) : Worker(newPos, newMap), quadrant(quad) {};
 	Scout(Vector2 newPos, Map* newMap);
 
 	void Update();
+	void Draw();
 	void Scouting();
 };
 
@@ -73,6 +73,7 @@ public:
 	Soldier(float time, Vector2 newPos, Map* newMap);
 
 	void Update();
+	void Draw();
 };
 
 class Crafter : public Worker
@@ -86,6 +87,7 @@ public:
 
 	void GetCrafting();
 	void Update();
+	void Draw();
 
 	CrafterType GetType() { return type; };
 	void Crafting();

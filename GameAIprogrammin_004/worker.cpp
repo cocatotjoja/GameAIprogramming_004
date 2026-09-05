@@ -33,7 +33,7 @@ void Worker::Update()
 void Worker::Draw()
 {
 	Rectangle boundary = { position.x, position.y, 4*resMult, 4*resMult };
-	DrawRectangleRec(boundary, Mred);
+	DrawRectangleRec(boundary, Mblue);
 }
 
 Vector2 Worker::Seek(Vector2 targetPos)
@@ -96,12 +96,14 @@ bool Worker::IsFree()
 	return false;
 }
 
+
 void Worker::GetProduct(Product newProduct, WorkshopType newWorkshopType)
 {
 	product = newProduct;
 	workshop = newWorkshopType;
 	state = SEARCH;
 }
+
 
 void Worker::Harvest()
 {
@@ -113,58 +115,56 @@ void Worker::Harvest()
 			if (timer > 0.0)
 			{
 				timer -= GetFrameTime();
+				return;
 			}
 			else
 			{
 				wood++;
 				map->trees[materialID].cut = true;
-				state = TRANSPORT;
 			}
 			break;
 
 		case ORE:
 			ore++;
 			map->ironOre[materialID].cut = true;
-			state = TRANSPORT;
 			break;
 
 		case COAL:
 			// Check for product
-			if (map->GetWorkshop(COAL_MILL)->CheckInventory(COAL));
+			if (map->GetWorkshop(COAL_MILL)->CheckInventory(COAL))
 			{
 				map->GetWorkshop(COAL_MILL)->RemoveMaterial(COAL);
 				coal++;
-				state = TRANSPORT;
-
 			}
 			break;
 
 		case BAR:
 			// Check for product
-			if (map->GetWorkshop(SMELT)->CheckInventory(BAR));
+			if (map->GetWorkshop(SMELT)->CheckInventory(BAR))
 			{
 				map->GetWorkshop(SMELT)->RemoveMaterial(BAR);
 				bar++;
-				state = TRANSPORT;
-
 			}
 			break;
 
 		case SWORD:
 			// Check for product
-			if (map->GetWorkshop(FORGE)->CheckInventory(SWORD));
+			if (map->GetWorkshop(FORGE)->CheckInventory(SWORD))
 			{
 				map->GetWorkshop(FORGE)->RemoveMaterial(SWORD);
 				sword++;
-				state = TRANSPORT;
-
 			}
 			break;
 
 		default:
 			break;
 		}
-		harvesting = false;
+
+		// Get path to workshop
+		Vector2 workshopPos = GetNearestNode(map->GetWorkshop(workshop)->GetPosition());
+		Vector2 currentPos = GetNearestNode(position);
+		map->GetPath(currentPos, workshopPos, path);
+
 		state = TRANSPORT;
 	}
 	else
@@ -175,7 +175,40 @@ void Worker::Harvest()
 
 void Worker::Transport()
 {
-	// TODO:
+	if (path.empty())
+	{
+		switch (product)
+		{
+		case WOOD:
+			wood--;
+			break;
+
+		case ORE:
+			ore--;
+			break;
+
+		case COAL:
+			coal--;
+			break;
+
+		case BAR:
+			bar--;
+			break;
+
+		case SWORD:
+			sword--;
+			break;
+
+		default:
+			break;
+		}
+		map->GetWorkshop(workshop)->AddMaterial(product);
+		state = IDLE;
+	}
+	else
+	{
+		FollowPath();
+	}
 }
 
 void Worker::Search()
@@ -255,11 +288,11 @@ void Scout::Update()
 	if (timer > 0.0)
 	{
 		timer -= GetFrameTime();
-		return;
 		if (timer < 0.0)
 		{
 			state = SCOUT;
 		}
+		return;
 	}
 	switch (state)
 	{
@@ -280,6 +313,12 @@ void Scout::Update()
 	}
 	// Update position
 	position += velocity;
+}
+
+void Scout::Draw()
+{
+	Rectangle boundary = { position.x, position.y, 4 * resMult, 4 * resMult };
+	DrawRectangleRec(boundary, Mgreen);
 }
 
 void Scout::Scouting()
@@ -335,6 +374,12 @@ void Soldier::Update()
 	position += velocity * GetFrameTime();
 }
 
+void Soldier::Draw()
+{
+	Rectangle boundary = { position.x, position.y, 4 * resMult, 4 * resMult };
+	DrawRectangleRec(boundary, Mred);
+}
+
 void Crafter::GetCrafting()
 {
 	state = CRAFTING;
@@ -356,6 +401,12 @@ void Crafter::Update()
 	}
 	// Update position
 	position += velocity * GetFrameTime();
+}
+
+void Crafter::Draw()
+{
+	Rectangle boundary = { position.x, position.y, 4 * resMult, 4 * resMult };
+	DrawRectangleRec(boundary, Myellow);
 }
 
 void Crafter::Crafting()

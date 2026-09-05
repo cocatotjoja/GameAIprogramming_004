@@ -1,10 +1,10 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\branch.h",
+        "Source": "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\branch.h",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\globals.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\globals.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\random",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\yvals_core.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vcruntime.h",
@@ -128,20 +128,20 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xbit_ops.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raylib.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raylib.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stdarg.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stdbool.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\map.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\map.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stack",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\deque",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raymath.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raymath.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\math.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\objects.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\mapreader.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\node.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\pathfinder.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\staffmanager.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\worker.h"
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\objects.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\mapreader.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\node.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\pathfinder.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\staffmanager.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\worker.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

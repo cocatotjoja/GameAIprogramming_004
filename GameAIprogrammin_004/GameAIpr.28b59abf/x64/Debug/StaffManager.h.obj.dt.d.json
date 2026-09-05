@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\staffmanager.h",
+        "Source": "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\staffmanager.h",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
@@ -88,7 +88,7 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\cstring",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\string.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\corecrt_memory.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\globals.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\globals.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\random",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_int128.hpp",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\algorithm",
@@ -128,19 +128,19 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xbit_ops.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raylib.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raylib.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stdarg.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stdbool.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\worker.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\worker.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\stack",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\deque",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raymath.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\raylib-5.5_win64_msvc16\\include\\raymath.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\math.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\map.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\objects.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\mapreader.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\node.h",
-            "c:\\users\\larcat-4-local\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\pathfinder.h"
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\map.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\objects.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\mapreader.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\node.h",
+            "c:\\users\\cocat\\documents\\github\\gameaiprogramming_004\\gameaiprogrammin_004\\pathfinder.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -12,6 +12,7 @@ public:
 	Branch* childFalse = nullptr;
 
 	virtual void WalkTree(Map& map, StaffManager& staff) {}
+	void SetChildren(Branch* t, Branch* f);
 };
 
 class WorkshopInventory : public Branch
@@ -89,9 +90,10 @@ class OrderProduct : public Branch
 public:
 	Product type;
 	WorkshopType workshop;
+	WorkshopType producer;
 	int neededAmount;
 
-	OrderProduct(Product newType, WorkshopType newWorkshop, int amount) : type(newType), workshop(newWorkshop), neededAmount(amount) {};
+	OrderProduct(Product newType, WorkshopType newWorkshop, WorkshopType newProducer, int amount) : type(newType), workshop(newWorkshop), producer(newProducer), neededAmount(amount) {};
 	void WalkTree(Map& map, StaffManager& staff);
 };
 

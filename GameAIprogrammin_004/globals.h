@@ -64,6 +64,7 @@ static Color Mlightgrey = { 230, 230, 230, 255 };
 static Color Mred = { 250, 0, 0, 255 };
 static Color Mblue = { 0, 250, 0, 255 };
 static Color Mgreen = { 0, 0, 250, 255 };
+static Color Myellow = { 250, 250, 0, 255 };
 
 static Color Mlightgreen = { 176, 190, 162, 255 };
 static Color MdarkGreen = { 40, 70, 70, 255 };

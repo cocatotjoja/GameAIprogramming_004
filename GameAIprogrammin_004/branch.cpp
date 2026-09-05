@@ -102,11 +102,14 @@ void OrderProduct::WalkTree(Map& map, StaffManager& staff)
 	int currentAmount = map.GetWorkshop(workshop)->CheckInventory(type);
 	int calculatedAmount = neededAmount - currentAmount;
 
-	// Order Product
-	map.GetWorkshop(workshop)->PlaceOrder(calculatedAmount);
+	// Order Product TODO: Wrong workshop here
+	map.GetWorkshop(producer)->PlaceOrder(calculatedAmount);
 
 	// Assign Worker
 	staff.AssignWorkers(type, workshop, calculatedAmount);
+
+	// Set Workshop to waiting
+	map.GetWorkshop(workshop)->SetState(WAITING);
 
 	// Walk
 	childTrue->WalkTree(map, staff);
@@ -129,6 +132,9 @@ void GetMaterial::WalkTree(Map& map, StaffManager& staff)
 	// Assign Worker
 	staff.AssignWorkers(type, workshop, calculatedAmount);
 
+	// Set Workshop to waiting
+	map.GetWorkshop(workshop)->SetState(WAITING);
+
 	// Walk
 	childTrue->WalkTree(map, staff);
 }
@@ -140,4 +146,10 @@ void StartProducing::WalkTree(Map& map, StaffManager& staff)
 
 	// Walk
 	childTrue->WalkTree(map, staff);
+}
+
+void Branch::SetChildren(Branch* t, Branch* f)
+{
+	childTrue = t;
+	childFalse = f;
 }
