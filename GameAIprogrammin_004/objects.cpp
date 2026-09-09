@@ -11,7 +11,6 @@ void Tree::Draw()
 	}
 }
 
-
 void Ore::Draw()
 {
 	if (cut == false)
@@ -19,8 +18,6 @@ void Ore::Draw()
 		DrawCircle(position.x, position.y, 1 * resMult, Mdarkgrey);
 	}
 }
-
-
 
 void Workshop::Update()
 {
@@ -36,6 +33,32 @@ void Workshop::Update()
 		break;
 	default:
 		break;
+	}
+}
+
+void Workshop::Draw()
+{
+	if (built)
+	{
+		Vector2 size = { 10.0f * resMult, 10.0f * resMult };
+		Rectangle boundary = { position.x, position.y, size.x, size.y };
+		switch (type)
+		{
+		case COAL_MILL:
+			DrawRectangleRec(boundary, Mblue);
+			break;
+		case SMELT:
+			DrawRectangleRec(boundary, Mgreen);
+			break;
+		case FORGE:
+			DrawRectangleRec(boundary, Myellow);
+			break;
+		case TRAINING_CAMP:
+			DrawRectangleRec(boundary, Mred);
+			break;
+		default:
+			break;
+		}
 	}
 }
 
@@ -85,6 +108,62 @@ void Workshop::RemoveMaterial(Product product)
 	case SWORD:
 		sword--;
 		break;
+	default:
+		break;
+	}
+}
+
+void Workshop::UseMaterials()
+{
+	switch (type)
+	{
+	case COAL_MILL:
+		if (built)
+		{
+			wood -= 2;
+		}
+		else
+		{
+			wood -= 10;
+		}
+		break;
+
+	case SMELT:
+		if (built)
+		{
+			ore -= 2;
+			coal -= 3;
+		}
+		else
+		{
+			wood -= 10;
+		}
+		break;
+
+	case FORGE:
+		if (built)
+		{
+			bar -= 1;
+			coal -= 2;
+		}
+		else
+		{
+			ore -= 3;
+			wood -= 10;
+		}
+		break;
+
+	case TRAINING_CAMP:
+		if (built)
+		{
+			sword >= 1;
+		}
+		else
+		{
+			wood -= 10;
+		}
+		break;
+
 	default:
 		break;
 	}

@@ -16,6 +16,7 @@ private:
 	std::vector<Crafter> crafters;
 
 public:
+	StaffManager();
 	StaffManager(Map* newMap);
 
 	void MakeScout();
@@ -24,6 +25,9 @@ public:
 
 	void Update();
 	void Draw();
+	void PrintSoldierCount();
+
+	void AddMap(Map* newMap) { map = newMap; };
 	
 	int GetNumWorkers() { return workers.size(); };
 	int AvailableWorker();

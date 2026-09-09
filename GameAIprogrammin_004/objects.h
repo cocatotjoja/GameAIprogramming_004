@@ -65,6 +65,7 @@ public:
 
 	void AddMaterial(Product product);
 	void RemoveMaterial(Product product);
+	void UseMaterials();
 	int CheckInventory(Product product);
 	int CheckOrders() { return orders; };
 	void PlaceOrder(int amount) { orders += amount; };

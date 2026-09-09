@@ -1,6 +1,21 @@
 #include "StaffManager.h"
 #include "map.h"
 
+StaffManager::StaffManager()
+{
+	// Create workers
+	for (size_t i = 0; i < 50; i++)
+	{
+		int x = 210 * resMult;
+		int y = 360 * resMult;
+
+		x += RandomIntRange(2, (30*resMult)-2 );
+		y += RandomIntRange(2, (30*resMult)-2 );
+
+		workers.push_back(Worker({ (float)x, (float)y }, map));
+	}
+}
+
 StaffManager::StaffManager(Map* newMap)
 {
 	map = newMap;
@@ -8,11 +23,11 @@ StaffManager::StaffManager(Map* newMap)
 	// Create workers
 	for (size_t i = 0; i < 50; i++)
 	{
-		int x = 21;
-		int y = 36;
+		int x = 210 * resMult;
+		int y = 360 * resMult;
 
-		x += RandomIntRange(2, (90*resMult)-2 );
-		y += RandomIntRange(2, (90*resMult)-2 );
+		x += RandomIntRange(2, (30*resMult)-2 );
+		y += RandomIntRange(2, (30*resMult)-2 );
 
 		workers.push_back(Worker({ (float)x, (float)y }, map));
 	}
@@ -98,6 +113,12 @@ void StaffManager::Draw()
 	{
 		sl.Draw();
 	}
+}
+
+void StaffManager::PrintSoldierCount()
+{
+	// Print Number of Soldiers
+	DrawText(TextFormat("Number of Soldiers: %d", (int)soldiers.size()), 50, 50, 30, Mblack);
 }
 
 int StaffManager::AvailableWorker()

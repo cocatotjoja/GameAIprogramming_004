@@ -27,9 +27,14 @@ void Map::Draw()
 	{
 		o.Draw();
 	}
+	for (Workshop w : workshops)
+	{
+		w.Draw();
+	}
+}
 
-
-
+void Map::DrawFog()
+{
 	// Draw Fog
 	for (int x = 0; x < 100; x++)
 	{
@@ -38,6 +43,14 @@ void Map::Draw()
 			rm.mapGrid[x][y].DrawFog();
 		}
 	}
+}
+
+void Map::Update()
+{
+	 for (Workshop w : workshops)
+	 {
+		 w.Update();
+	 }
 }
 
 void Map::MakeMap()
@@ -71,16 +84,17 @@ void Map::MakeMap()
 	// Add 60 iron ore
 	AddOre();
 
-	Vector2 temPos = { 0, 0 };
-	AddWorkshop(COAL_MILL, temPos);
-	AddWorkshop(SMELT, temPos);
-	AddWorkshop(FORGE, temPos);
-	AddWorkshop(TRAINING_CAMP, temPos);
+
+	// Add workshops
+	AddWorkshop(COAL_MILL,		Vector2{ 21, 36 } * 10 * resMult);
+	AddWorkshop(SMELT,			Vector2{ 23, 36 } * 10 * resMult);
+	AddWorkshop(FORGE,			Vector2{ 21, 38 } * 10 * resMult);
+	AddWorkshop(TRAINING_CAMP,	Vector2{ 23, 38 } * 10 * resMult);
 
 	// Remove fog from 9x9
-	for (size_t x = 21; x < 30; x++)
+	for (size_t x = 21; x < 24; x++)
 	{
-		for (size_t y = 36; y < 45; y++)
+		for (size_t y = 36; y < 39; y++)
 		{
 			rm.mapGrid[x][y].RemoveFog();
 		}

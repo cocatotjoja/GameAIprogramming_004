@@ -28,7 +28,10 @@ public:
 
 	Map();
 	Map(StaffManager* newStaff) : staff(newStaff) {};
+	void AddStaffManager(StaffManager* newStaff) { staff = newStaff; };
 	void Draw();
+	void DrawFog();
+	void Update();
 	void MakeMap();
 	void AddTree(Vector2 pos);
 	void AddOre();

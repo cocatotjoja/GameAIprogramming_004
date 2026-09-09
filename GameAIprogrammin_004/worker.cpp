@@ -219,11 +219,15 @@ void Worker::Search()
 	case WOOD:
 		// GET TREE
 		ID = map->GetTree();
+		// Handle if no tree is available
+		if (ID == -1)
+		{
+			break;
+		}
 		// GET PATH TO TREE
 		goalNode = GetNearestNode(map->trees[ID].position);
 		map->GetPath(startNode, goalNode, path);
 
-		// TODO: Handle if no tree is available
 
 		materialID = ID;
 		map->trees[materialID].booked = true;
@@ -234,11 +238,15 @@ void Worker::Search()
 	case ORE:
 		// GET ORE
 		ID = map->GetOre();
+		// Handle if no ore is available
+		if (ID == -1)
+		{
+			break;
+		}
 		// GET PATH TO ORE
 		goalNode = GetNearestNode(map->ironOre[ID].position);
 		map->GetPath(startNode, goalNode, path);
 
-		// TODO: Handle if no ore is available
 
 		materialID = ID;
 		map->ironOre[materialID].booked = true;
@@ -273,6 +281,8 @@ void Worker::Search()
 		break;
 	}
 }
+
+
 
 Scout::Scout(Vector2 newPos, Map* newMap)
 {
@@ -351,6 +361,8 @@ void Scout::Scouting()
 	FollowPath();
 }
 
+
+
 Soldier::Soldier(float time, Vector2 newPos, Map* newMap)
 {
 	timer = time;
@@ -377,6 +389,8 @@ void Soldier::Draw()
 	Rectangle boundary = { position.x, position.y, 4 * resMult, 4 * resMult };
 	DrawRectangleRec(boundary, Mred);
 }
+
+
 
 void Crafter::GetCrafting()
 {

@@ -1,7 +1,12 @@
 #include "raylib.h"
+#include <iostream>
+
+
 #include "globals.h"
 #include "map.h"
 #include "StaffManager.h"
+#include "DecisionTree.h"
+
 
 int main()
 {
@@ -10,29 +15,42 @@ int main()
     SetTargetFPS(60);
 
 
-    // Create Map
-    Map newMap;
-    // Create Workers
-    // Scout scout1 = Scout(Vector2{ 210*resMult+3, 360*resMult+7 }, &newMap);
-    // Scout scout2 = Scout(Vector2{ 210*resMult+5, 360*resMult+7 }, &newMap);
-    //StaffManager staff;
+
+    // Create Map, Staff, & Decision Tree
+    // Map map;
+    auto map = std::make_unique<Map>();
+    StaffManager staff;
+    DecisionTree tree = DecisionTree(map.get(), &staff);
+
+
+
+    map->AddStaffManager(&staff);
+    staff.AddMap(map.get());
+
+    staff.MakeScout();
+    staff.MakeScout();
+    staff.MakeScout();
+    staff.MakeScout();
+
 
 
     //Game Loop
     while (WindowShouldClose() == false)
     {
         // Updating
-        // scout1.Update();
-        // scout2.Update();
+        map->Update();
+        staff.Update();
 
         // Drawing
         BeginDrawing();
         ClearBackground(Mblack);
 
         // Draw Stuff
-        newMap.Draw();
-        // scout1.Draw();
-        // scout2.Draw();
+        map->Draw();
+        staff.Draw();
+        map->DrawFog();
+
+        staff.PrintSoldierCount();
         
 
         EndDrawing();
@@ -41,9 +59,3 @@ int main()
     CloseWindow();
     return 0;
 }
-
-
-
-// TODO: Ask Fredrik: 
-// Severity	Code	Description	Project	File	Line	Suppression State	Details
-// Warning	MSB8028	The intermediate directory(GameAIpr.28b59abf\x64\Debug\) contains files shared from another project(GameAIprogrammin_001.vcxproj).This can lead to incorrect clean and rebuild behavior.GameAIprogrammin_004	C : \Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets	538

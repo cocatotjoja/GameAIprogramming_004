@@ -282,8 +282,11 @@ DecisionTree::DecisionTree(Map* newMap, StaffManager* newStaff)
 {
 	map = newMap;
 	staff = newStaff;
+
+	MakeTree();
 }
 
 void DecisionTree::WalkTree()
 {
+	branches[0]->WalkTree(*map, *staff);
 }

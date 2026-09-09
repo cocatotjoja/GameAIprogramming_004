@@ -142,6 +142,7 @@ void GetMaterial::WalkTree(Map& map, StaffManager& staff)
 void StartProducing::WalkTree(Map& map, StaffManager& staff)
 {
 	map.GetWorkshop(type)->SetState(RUNNING);
+	map.GetWorkshop(type)->UseMaterials();
 	staff.AssignCrafter(crafter, craftingTime);
 
 	// Walk
