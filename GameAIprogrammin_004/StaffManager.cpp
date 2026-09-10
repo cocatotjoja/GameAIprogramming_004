@@ -69,24 +69,24 @@ void StaffManager::MakeCrafter(CrafterType type)
 	}
 }
 
-void StaffManager::Update()
+void StaffManager::Update()			// For Each creates a copy
 {
-	for (Worker w : workers)
+	for (Worker& w : workers)
 	{
 		w.Update();
 	}
 
-	for (Scout s : scouts)
+	for (Scout& s : scouts)
 	{
 		s.Update();
 	}
 
-	for (Crafter c : crafters)
+	for (Crafter& c : crafters)
 	{
 		c.Update();
 	}
 
-	for (Soldier sl : soldiers)
+	for (Soldier& sl : soldiers)
 	{
 		sl.Update();
 	}
@@ -94,22 +94,22 @@ void StaffManager::Update()
 
 void StaffManager::Draw()
 {
-	for (Worker w : workers)
+	for (Worker& w : workers)
 	{
 		w.Draw();
 	}
 
-	for (Scout s : scouts)
+	for (Scout& s : scouts)
 	{
 		s.Draw();
 	}
 
-	for (Crafter c : crafters)
+	for (Crafter& c : crafters)
 	{
 		c.Draw();
 	}
 
-	for (Soldier sl : soldiers)
+	for (Soldier& sl : soldiers)
 	{
 		sl.Draw();
 	}

@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\",
+  "WorkspaceRootPath": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:StaffManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:StaffManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:StaffManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:worker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:objects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:DecisionTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:DecisionTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28B59ABF-3BA8-42F6-8C21-D73F77796E6D}|GameAIprogrammin_001.vcxproj|solutionrelative:globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAcwDQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwDEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-05T19:29:15.37Z",
               "IsPinned": true,
@@ -62,9 +62,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "globals.h",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h",
               "RelativeDocumentMoniker": "globals.h",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\globals.h",
               "RelativeToolTip": "globals.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -75,9 +75,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "StaffManager.h",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h",
               "RelativeDocumentMoniker": "StaffManager.h",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.h",
               "RelativeToolTip": "StaffManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -86,24 +86,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StaffManager.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp",
               "RelativeDocumentMoniker": "StaffManager.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\StaffManager.cpp",
               "RelativeToolTip": "StaffManager.cpp",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAtwHgAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAtwEcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-09T20:45:28.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "worker.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp",
               "RelativeDocumentMoniker": "worker.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\worker.cpp",
               "RelativeToolTip": "worker.cpp",
               "ViewState": "AgIAAFkAAAAAAAAAAAAqwCkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -112,24 +112,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "objects.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp",
               "RelativeDocumentMoniker": "objects.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\objects.cpp",
               "RelativeToolTip": "objects.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-09T19:27:23.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-09T19:27:23.927Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "DecisionTree.h",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h",
               "RelativeDocumentMoniker": "DecisionTree.h",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.h",
               "RelativeToolTip": "DecisionTree.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -139,9 +138,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "DecisionTree.cpp",
-              "DocumentMoniker": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp",
+              "DocumentMoniker": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp",
               "RelativeDocumentMoniker": "DecisionTree.cpp",
-              "ToolTip": "C:\\Users\\cocat\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp",
+              "ToolTip": "C:\\Users\\larcat-4-local\\Documents\\GitHub\\GameAIprogramming_004\\GameAIprogrammin_004\\DecisionTree.cpp",
               "RelativeToolTip": "DecisionTree.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0BAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
