@@ -17,16 +17,16 @@ using namespace std;
 class Map
 {
 	StaffManager* staff;
-	MapReader rm;
 	Pathfinder pathfinder;
 	
 public:
+	MapReader rm;
 	vector<Tree> trees;
 	vector<Ore> ironOre;
 	vector<Rectangle> swamps;
 	vector<Workshop> workshops;
 
-	Map();
+	Map() {};
 	Map(StaffManager* newStaff) : staff(newStaff) {};
 	void AddStaffManager(StaffManager* newStaff) { staff = newStaff; };
 	void Draw();
@@ -43,6 +43,8 @@ public:
 	void RemoveFog(Vector2 index);
 	bool IsFoggy();
 	void GetPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath);
+	void GetScoutPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath);
 	int GetTree();
 	int GetOre();
+	void PrintProduction();
 };

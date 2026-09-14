@@ -2,11 +2,6 @@
 #include "StaffManager.h"
 
 
-Map::Map()
-{
-	MakeMap();
-}
-
 void Map::Draw()
 {
 	// Draw land
@@ -19,15 +14,15 @@ void Map::Draw()
 	}
 
 	// Draw objects
-	for (Tree t : trees)
+	for (Tree& t : trees)
 	{
 		t.Draw();
 	}
-	for (Ore o : ironOre)
+	for (Ore& o : ironOre)
 	{
 		o.Draw();
 	}
-	for (Workshop w : workshops)
+	for (Workshop& w : workshops)
 	{
 		w.Draw();
 	}
@@ -47,7 +42,14 @@ void Map::DrawFog()
 
 void Map::Update()
 {
-	 for (Workshop w : workshops)
+	workshops[0].Update();
+	workshops[1].Update();
+	workshops[2].Update();
+	workshops[3].Update();
+
+	return;
+
+	 for (Workshop& w : workshops)
 	 {
 		 w.Update();
 	 }
@@ -65,7 +67,7 @@ void Map::MakeMap()
 			//Change color based on terrain type
 			if (def == 'T')
 			{
-				// Add three trees
+				// Add five trees
 				AddTree(pos);
 				AddTree(pos);
 				AddTree(pos);
@@ -169,7 +171,7 @@ Workshop* Map::GetWorkshop(WorkshopType type)
 
 bool Map::HaveWorkshop(WorkshopType type)
 {
-	for (Workshop ws : workshops)
+	for (Workshop& ws : workshops)
 	{
 		if (ws.GetType() == type && ws.IsBuilt())
 		{
@@ -224,8 +226,14 @@ void Map::GetPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath)
 	pathfinder.FindPath(rm.mapGrid, start, goal, returnPath);
 }
 
+void Map::GetScoutPath(Vector2 start, Vector2 goal, std::stack<Vector2>& returnPath)
+{
+	pathfinder.ScoutPath(rm.mapGrid, start, goal, returnPath);
+}
+
 int Map::GetTree()
 {
+	int testInt = trees.size();
 	for (size_t i = 0; i < trees.size(); i++)
 	{
 		if (trees[i].booked == false)
@@ -254,5 +262,13 @@ int Map::GetOre()
 		}
 	}
 	return -1;
+}
+
+void Map::PrintProduction()
+{
+	for (Workshop& w : workshops)
+	{
+		w.PrintProduct();
+	}
 }
 

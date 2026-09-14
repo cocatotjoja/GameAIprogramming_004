@@ -33,6 +33,7 @@ public:
 	Vector2 GetPosition() { return position; };
 	Vector2 GetID() { return ID; };
 	bool IsBlocked();
+	bool BlockedORFogged();
 	bool IsFogged() { return fog; };
 	int GetState() { return state; };
 	void SetState(int newState) { state = newState; };

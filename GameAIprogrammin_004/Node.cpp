@@ -42,9 +42,18 @@ bool Node::IsBlocked()
 	return false;
 }
 
+bool Node::BlockedORFogged()
+{
+	if (type == 'B' || type == 'V' || blocked || fog == true)
+	{
+		return true;
+	}
+	return false;
+}
+
 void Node::SetValues(float parentValue, Vector2 goal)
 {
-	Vector2 goalID = goal / 20;
+	Vector2 goalID = goal / (10 * resMult);
 	valueSofar = parentValue;
 	valueLeft = abs(ID.x - goalID.x) + abs(ID.y - goalID.y);
 	valueTotal = valueSofar + valueLeft;

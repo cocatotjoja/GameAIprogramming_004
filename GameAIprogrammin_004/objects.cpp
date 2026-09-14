@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "objects.h"
 #include "map.h"
 #include "StaffManager.h"
@@ -148,7 +150,7 @@ void Workshop::UseMaterials()
 		}
 		else
 		{
-			ore -= 3;
+			bar -= 3;
 			wood -= 10;
 		}
 		break;
@@ -156,7 +158,7 @@ void Workshop::UseMaterials()
 	case TRAINING_CAMP:
 		if (built)
 		{
-			sword >= 1;
+			sword -= 1;
 		}
 		else
 		{
@@ -194,13 +196,14 @@ void Workshop::Running()
 	{
 		if (timer > 0.0f)
 		{
-			timer -= GetFrameTime();
+			timer -= GetFrameTime() * xSpeed;
 		}
 		else
 		{
 			AddMaterial(produce);
 			orders--;
 			timer = 0.0;
+			productMade++;
 			state = AVAILABLE;
 		}
 	}
@@ -208,12 +211,13 @@ void Workshop::Running()
 	{
 		if (timer > 0.0f)
 		{
-			timer -= GetFrameTime();
+			timer -= GetFrameTime() * xSpeed;
 		}
 		else
 		{
 			built = true;
-			timer = 0;
+			PrintBuilt();
+			timer = 0.0;
 			state = AVAILABLE;
 		}
 	}
@@ -276,7 +280,7 @@ void Workshop::Waiting()
 			}
 			break;
 		case FORGE:
-			if (ore >= 3 && wood >= 10)
+			if (bar >= 3 && wood >= 10)
 			{
 				timer = 180.0;
 				state = AVAILABLE;
@@ -292,5 +296,44 @@ void Workshop::Waiting()
 		default:
 			break;
 		}
+	}
+}
+
+void Workshop::PrintProduct()
+{
+	switch (type)
+	{
+	case COAL_MILL:
+		DrawText(TextFormat("Num of Coal made: %d", (int)productMade), 25 * resMult, 55 * resMult, 10 * resMult, Mblack);
+		break;
+	case SMELT:
+		DrawText(TextFormat("Num of Iron Bars made: %d", (int)productMade), 25 * resMult, 75 * resMult, 10 * resMult, Mblack);
+		break;
+	case FORGE:
+		DrawText(TextFormat("Num of Swords made: %d", (int)productMade), 25 * resMult, 95 * resMult, 10 * resMult, Mblack);
+		break;
+	default:
+		break;
+	}
+}
+
+void Workshop::PrintBuilt()
+{
+	switch (type)
+	{
+	case COAL_MILL:
+		std::cout << "Coal Mill Built!" << std::endl;
+		break;
+	case SMELT:
+		std::cout << "Smelt Built!" << std::endl;
+		break;
+	case FORGE:
+		std::cout << "Forge Built!" << std::endl;		
+		break;
+	case TRAINING_CAMP:
+		std::cout << "Camp Built!" << std::endl;
+		break;
+	default:
+		break;
 	}
 }

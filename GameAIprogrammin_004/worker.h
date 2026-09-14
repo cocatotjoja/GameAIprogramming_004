@@ -12,11 +12,11 @@ class Worker
 {
 public:
 	Map* map;
-	States state = SCOUT;
+	States state = IDLE;
 	Vector2 position;
 	Vector2 velocity = { 0, 0 };
-	float maxAcceleration = 400;
-	float maxSpeed = 2.0f;
+	float maxAcceleration = 200 * resMult;
+	float maxSpeed = 1.0f * resMult;
 	stack<Vector2> path;
 	bool followingPath = false;
 	bool harvesting = false;

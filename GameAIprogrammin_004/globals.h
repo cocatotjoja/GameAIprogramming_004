@@ -28,7 +28,8 @@ enum WorkshopType
 	COAL_MILL,
 	SMELT,
 	FORGE,
-	TRAINING_CAMP
+	TRAINING_CAMP,
+	NO_WORKSHOP
 };
 
 enum WorkshopState
@@ -48,7 +49,8 @@ enum CrafterType
 };
 
 // Resolution Multiplier
-static constexpr int resMult = 2;
+static constexpr int resMult = 1;
+static constexpr int xSpeed = 4;
 
 //Window size
 static float width = 1000 * resMult;
@@ -62,8 +64,8 @@ static Color Mdarkgrey = { 54, 57, 59, 255 };
 static Color Mlightgrey = { 230, 230, 230, 255 };
 
 static Color Mred = { 250, 0, 0, 255 };
-static Color Mblue = { 0, 250, 0, 255 };
-static Color Mgreen = { 0, 0, 250, 255 };
+static Color Mblue = { 0, 0, 250, 255 };
+static Color Mgreen = { 0, 250, 0, 255 };
 static Color Myellow = { 250, 250, 0, 255 };
 
 static Color Mlightgreen = { 176, 190, 162, 255 };

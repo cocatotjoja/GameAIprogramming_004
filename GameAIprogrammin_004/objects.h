@@ -47,6 +47,7 @@ class Workshop
 	Product produce;
 	bool built = false;
 	int orders = 0;
+	int productMade = 0;
 
 	Map* map;
 	StaffManager* staff;
@@ -77,4 +78,7 @@ public:
 
 	void Running();
 	void Waiting();
+
+	void PrintProduct();
+	void PrintBuilt();
 };

@@ -1,20 +1,6 @@
 #include "StaffManager.h"
 #include "map.h"
 
-StaffManager::StaffManager()
-{
-	// Create workers
-	for (size_t i = 0; i < 50; i++)
-	{
-		int x = 210 * resMult;
-		int y = 360 * resMult;
-
-		x += RandomIntRange(2, (30*resMult)-2 );
-		y += RandomIntRange(2, (30*resMult)-2 );
-
-		workers.push_back(Worker({ (float)x, (float)y }, map));
-	}
-}
 
 StaffManager::StaffManager(Map* newMap)
 {
@@ -28,6 +14,21 @@ StaffManager::StaffManager(Map* newMap)
 
 		x += RandomIntRange(2, (30*resMult)-2 );
 		y += RandomIntRange(2, (30*resMult)-2 );
+
+		workers.push_back(Worker({ (float)x, (float)y }, map));
+	}
+}
+
+void StaffManager::MakeWorkers()
+{
+	// Create workers
+	for (size_t i = 0; i < 50; i++)
+	{
+		int x = 210 * resMult;
+		int y = 360 * resMult;
+
+		x += RandomIntRange(2, (30 * resMult) - 2);
+		y += RandomIntRange(2, (30 * resMult) - 2);
 
 		workers.push_back(Worker({ (float)x, (float)y }, map));
 	}
@@ -50,6 +51,7 @@ void StaffManager::MakeSoldier()
 			soldiers.push_back(Soldier(60.0f, workers[i].position, map));
 			workers[i] = workers.back();
 			workers.pop_back();
+			return;
 		}
 	}
 }
@@ -65,11 +67,12 @@ void StaffManager::MakeCrafter(CrafterType type)
 			crafters.back().timer = 120.0;
 			workers[i] = workers.back();
 			workers.pop_back();
+			return;
 		}
 	}
 }
 
-void StaffManager::Update()			// For Each creates a copy
+void StaffManager::Update()
 {
 	for (Worker& w : workers)
 	{
@@ -118,13 +121,13 @@ void StaffManager::Draw()
 void StaffManager::PrintSoldierCount()
 {
 	// Print Number of Soldiers
-	DrawText(TextFormat("Number of Soldiers: %d", (int)soldiers.size()), 50, 50, 30, Mblack);
+	DrawText(TextFormat("Number of Soldiers: %d", (int)soldiers.size()), 25 * resMult, 25 * resMult, 15 * resMult, Mblack);
 }
 
 int StaffManager::AvailableWorker()
 {
 	int availableWorkers = 0;
-	for (Worker w : workers)
+	for (Worker& w : workers)
 	{
 		if (w.IsFree())
 		{
@@ -136,7 +139,7 @@ int StaffManager::AvailableWorker()
 
 bool StaffManager::AvailableCrafter(CrafterType type)
 {
-	for (Crafter c : crafters)
+	for (Crafter& c : crafters)
 	{
 		if (c.GetType() == type && c.IsFree())
 		{
@@ -148,7 +151,7 @@ bool StaffManager::AvailableCrafter(CrafterType type)
 
 bool StaffManager::HaveCrafter(CrafterType type)
 {
-	for (Crafter c : crafters)
+	for (Crafter& c : crafters)
 	{
 		if (c.GetType() == type)
 		{
@@ -163,9 +166,9 @@ void StaffManager::AssignWorkers(Product productType, WorkshopType workshopType,
 	// Assign correct number of workers
 	int index = 0;
 	int assigned = 0;
-	while (index < 50 && assigned < numberNeeded)
+	while (index < workers.size() && assigned < numberNeeded)
 	{
-		if (workers[index].IsFree())		// TODO:	SHOULD BE MOVED TO THE FUNCTION IN THE WORKER CLASS
+		if (workers[index].IsFree())
 		{
 			// Assign worker
 			workers[index].GetProduct(productType, workshopType);
@@ -179,7 +182,7 @@ void StaffManager::AssignCrafter(CrafterType crafterType, float newTime)
 {
 	if (crafterType != NO_CRAFTER)
 	{
-		for (size_t i = 0; i < 50; i++)
+		for (size_t i = 0; i < crafters.size(); i++)
 		{
 			if (crafters[i].GetType() == crafterType && crafters[i].IsFree())
 			{

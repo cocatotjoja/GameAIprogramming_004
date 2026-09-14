@@ -16,9 +16,10 @@ private:
 	std::vector<Crafter> crafters;
 
 public:
-	StaffManager();
+	StaffManager() {};
 	StaffManager(Map* newMap);
 
+	void MakeWorkers();
 	void MakeScout();
 	void MakeSoldier();
 	void MakeCrafter(CrafterType type);

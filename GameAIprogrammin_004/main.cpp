@@ -14,18 +14,21 @@ int main()
     InitWindow(width, height, "Ai Movement");
     SetTargetFPS(60);
 
-
+    // Decission Tree interval timer
+    float interval = 10.0;
+    float timer = 0.0;
 
     // Create Map, Staff, & Decision Tree
-    // Map map;
     auto map = std::make_unique<Map>();
     StaffManager staff;
     DecisionTree tree = DecisionTree(map.get(), &staff);
 
 
-
+    
     map->AddStaffManager(&staff);
+    map->MakeMap();
     staff.AddMap(map.get());
+    staff.MakeWorkers();
 
     staff.MakeScout();
     staff.MakeScout();
@@ -37,6 +40,16 @@ int main()
     //Game Loop
     while (WindowShouldClose() == false)
     {
+        timer += GetFrameTime();
+
+        if (timer >= interval)
+        {
+            tree.WalkTree();
+            
+            timer = 0.0;
+        }
+
+
         // Updating
         map->Update();
         staff.Update();
@@ -51,6 +64,7 @@ int main()
         map->DrawFog();
 
         staff.PrintSoldierCount();
+        map->PrintProduction();
         
 
         EndDrawing();

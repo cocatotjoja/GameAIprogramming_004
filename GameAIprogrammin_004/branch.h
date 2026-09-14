@@ -10,9 +10,12 @@ class Branch
 public:
 	Branch* childTrue = nullptr;
 	Branch* childFalse = nullptr;
+	std::string branchDef;
 
-	virtual void WalkTree(Map& map, StaffManager& staff) {}
+	Branch() {};
+	virtual void WalkTree(Map& map, StaffManager& staff) {};
 	void SetChildren(Branch* t, Branch* f);
+	void SetString(std::string newDef) { branchDef = newDef; };
 };
 
 class WorkshopInventory : public Branch
@@ -124,7 +127,7 @@ public:
 	CrafterType crafter;
 	float craftingTime;
 
-	StartProducing(WorkshopType newType, CrafterType newCrafter, float newTime) : type(newType), crafter(newCrafter), craftingTime() {};
+	StartProducing(WorkshopType newType, CrafterType newCrafter, float newTime) : type(newType), crafter(newCrafter), craftingTime(newTime) {};
 	void WalkTree(Map& map, StaffManager& staff);
 };
 
@@ -132,5 +135,5 @@ class EndPoint : public Branch
 {
 public:
 	EndPoint() {};
-	void WalkTree(Map& map, StaffManager& staff) { return; };
+	void WalkTree(Map& map, StaffManager& staff);
 };

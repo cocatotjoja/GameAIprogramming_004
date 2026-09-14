@@ -26,8 +26,19 @@ void Worker::Update()
 	{
 		velocity = Vector2Normalize(velocity) * maxSpeed;
 	}
+
 	// Update position
-	position += velocity;
+	// Check for lower speed
+	Vector2 getNode = GetNearestNode(position);
+	if (map->rm.mapGrid[(int)getNode.x][(int)getNode.y].GetType() == 'G')
+	{
+		position += velocity * 0.5;
+	}
+	else
+	{
+		position += velocity;
+	}
+
 }
 
 void Worker::Draw()
@@ -58,7 +69,6 @@ void Worker::FollowPath()
 	{
 		return;
 	}
-	//velocity += Seek(path.top()) * GetFrameTime();
 	velocity += Seek(path.top());
 }
 
@@ -105,14 +115,16 @@ void Worker::GetProduct(Product newProduct, WorkshopType newWorkshopType)
 
 void Worker::Harvest()
 {
+	Workshop* thisWorkshop;
 	if (path.empty())
 	{
+		velocity = { 0, 0 };
 		switch (product)
 		{
 		case WOOD:
 			if (timer > 0.0)
 			{
-				timer -= GetFrameTime();
+				timer -= GetFrameTime() * xSpeed;
 				return;
 			}
 			else
@@ -129,28 +141,43 @@ void Worker::Harvest()
 
 		case COAL:
 			// Check for product
-			if (map->GetWorkshop(COAL_MILL)->CheckInventory(COAL))
+			thisWorkshop = map->GetWorkshop(COAL_MILL);
+			if (thisWorkshop->CheckInventory(COAL) >= 1)
 			{
-				map->GetWorkshop(COAL_MILL)->RemoveMaterial(COAL);
+				thisWorkshop->RemoveMaterial(COAL);
 				coal++;
+			}
+			else
+			{
+				return;
 			}
 			break;
 
 		case BAR:
 			// Check for product
-			if (map->GetWorkshop(SMELT)->CheckInventory(BAR))
+			thisWorkshop = map->GetWorkshop(SMELT);
+			if (thisWorkshop->CheckInventory(BAR) >= 1)
 			{
-				map->GetWorkshop(SMELT)->RemoveMaterial(BAR);
+				thisWorkshop->RemoveMaterial(BAR);
 				bar++;
+			}
+			else
+			{
+				return;
 			}
 			break;
 
 		case SWORD:
 			// Check for product
-			if (map->GetWorkshop(FORGE)->CheckInventory(SWORD))
+			thisWorkshop = map->GetWorkshop(FORGE);
+			if (thisWorkshop->CheckInventory(SWORD) >= 1)
 			{
-				map->GetWorkshop(FORGE)->RemoveMaterial(SWORD);
+				thisWorkshop->RemoveMaterial(SWORD);
 				sword++;
+			}
+			else
+			{
+				return;
 			}
 			break;
 
@@ -175,6 +202,7 @@ void Worker::Transport()
 {
 	if (path.empty())
 	{
+		velocity = { 0, 0 };
 		switch (product)
 		{
 		case WOOD:
@@ -226,6 +254,7 @@ void Worker::Search()
 		}
 		// GET PATH TO TREE
 		goalNode = GetNearestNode(map->trees[ID].position);
+		path.push(map->trees[ID].position);
 		map->GetPath(startNode, goalNode, path);
 
 
@@ -245,6 +274,7 @@ void Worker::Search()
 		}
 		// GET PATH TO ORE
 		goalNode = GetNearestNode(map->ironOre[ID].position);
+		path.push(map->ironOre[ID].position);
 		map->GetPath(startNode, goalNode, path);
 
 
@@ -295,7 +325,7 @@ void Scout::Update()
 {
 	if (timer > 0.0)
 	{
-		timer -= GetFrameTime();
+		timer -= GetFrameTime() * xSpeed;
 		if (timer < 0.0)
 		{
 			state = SCOUT;
@@ -319,8 +349,18 @@ void Scout::Update()
 	{
 		velocity = Vector2Normalize(velocity) * maxSpeed;
 	}
+
 	// Update position
-	position += velocity;
+	// Check for lower speed
+	Vector2 getNode = GetNearestNode(position);
+	if (map->rm.mapGrid[(int)getNode.x][(int)getNode.y].GetType() == 'G')
+	{
+		position += velocity * 0.5;
+	}
+	else
+	{
+		position += velocity;
+	}
 }
 
 void Scout::Draw()
@@ -354,7 +394,7 @@ void Scout::Scouting()
 		}
 		else
 		{
-			map->GetPath(currentNode, nextFog, path);
+			map->GetScoutPath(currentNode, nextFog, path);
 		}
 	}
 
@@ -381,7 +421,7 @@ void Soldier::Update()
 		break;
 	}
 	// Update position
-	position += velocity * GetFrameTime();
+	position += velocity;
 }
 
 void Soldier::Draw()
@@ -412,7 +452,7 @@ void Crafter::Update()
 		break;
 	}
 	// Update position
-	position += velocity * GetFrameTime();
+	position += velocity;
 }
 
 void Crafter::Draw()
@@ -425,7 +465,7 @@ void Crafter::Crafting()
 {
 	if (timer > 0)
 	{
-		timer -= GetFrameTime();
+		timer -= GetFrameTime() * xSpeed;
 	}
 	else
 	{
